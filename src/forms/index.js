@@ -1,5 +1,5 @@
 import React from "react";
-import './forms.css'
+import "./forms.css";
 
 function Input({
     value,
@@ -8,50 +8,90 @@ function Input({
     id,
     classInput,
     textLabel,
-    required
+    required,
+    icon
 }) {
+    let iconInput
+    switch (icon) {
+        case "email":
+            iconInput = <i class="fa-solid fa-envelope"></i>;
+            break;
+        case "password":
+            iconInput = <i class="fa-solid fa-lock"></i>;
+            break;
+        case "phone":
+            iconInput = <i class="fa-solid fa-phone"></i>;
+            break;
+        default:
+            iconInput = '';
+            break;
+    }
+    const errorInput = false;
+
+
     return (
         <div className="contentInput">
-            <span>Hola</span>
-            <label htmlFor={(id ? id : `input${placeholder}`)}>{textLabel ? textLabel : 'label undefined'}</label>
             <input
                 type={type}
                 value={value}
                 placeholder={placeholder}
-                id={(id ? id : `input${placeholder}`)}
-                className={`${classInput}`}
+                id={id ? id : `input${placeholder}`}
+                className={`${classInput} ${errorInput && 'error'}`}
             />
+
+            <label htmlFor={id ? id : `input${placeholder}`}>
+                {iconInput} {textLabel ? textLabel : "label undefined"}
+            </label>
+            {errorInput && <i class="fa-solid fa-exclamation"></i>}
         </div>
     );
 }
 
-function Button({
-    typeStyleButton,
-    textButton,
-    typeButton
-}) {
+function Button({ typeStyleButton, textButton, typeButton }) {
     switch (typeStyleButton) {
-        case 'primary':
+        case "primary":
             return (
-                <button className="buttonPrimary" type={typeButton ? typeButton : 'button'}>{textButton ? textButton : 'Text undefined'}</button>
+                <button
+                    className="buttonPrimary"
+                    type={typeButton ? typeButton : "button"}
+                >
+                    {textButton ? textButton : "Text undefined"}
+                </button>
             );
-        case 'secondary1':
+        case "secondary1":
             return (
-                <button className="secondary1" type={typeButton ? typeButton : 'button'}>{textButton ? textButton : 'Text undefined'}</button>
+                <button
+                    className="secondary1"
+                    type={typeButton ? typeButton : "button"}
+                >
+                    {textButton ? textButton : "Text undefined"}
+                </button>
             );
-        case 'secondary2':
+        case "secondary2":
             return (
-                <button className="secondary2" type={typeButton ? typeButton : 'button'}>{textButton ? textButton : 'Text undefined'}</button>
+                <button
+                    className="secondary2"
+                    type={typeButton ? typeButton : "button"}
+                >
+                    {textButton ? textButton : "Text undefined"}
+                </button>
             );
-        case 'secondary3':
+        case "secondary3":
             return (
-                <button className="secondary3" type={typeButton ? typeButton : 'button'}>{textButton ? textButton : 'Text undefined'}</button>
+                <button
+                    className="secondary3"
+                    type={typeButton ? typeButton : "button"}
+                >
+                    {textButton ? textButton : "Text undefined"}
+                </button>
             );
         default:
             return (
-                <button className="" type=''>Undefined</button>
+                <button className="" type="">
+                    Undefined
+                </button>
             );
     }
 }
 
-export { Input, Button }
+export { Input, Button };

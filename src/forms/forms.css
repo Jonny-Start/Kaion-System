@@ -4,8 +4,8 @@
     --Azul-KS: #1F487E;
     --Morado-KS: #55286F;
     --Rojo-KS: #AB1919;
-    --Morado-deg-KS: #55286F 55%;
-    --Azul-deg-KS: #55286F 55%;
+    --Morado-deg-KS: rgb(85, 40, 111, 55%);
+    --Azul-deg-KS: rgb(31, 72, 126, 75%);
     --Blanco-KS: #F8FBFF;
 
     /*Deg-Azul-deg-KS-Morado-deg-KS*/
@@ -24,20 +24,24 @@ div.contentInput {
     /* height: min-content; */
     /* height: 50px; */
     margin: 5em;
-
-    background-color: #f50b0b59;
 }
 
 label {
-    font-size: 12px;
+    font-size: 10px;
     color: var(--Azul-KS);
 
-    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+    transition: top 100ms ease-in, left 100ms ease-in, font-size 100ms ease-in;
     /* background-color: #060b23; */
     cursor: text;
     position: absolute;
     left: 3px;
-    top: 5px;
+    top: 6px;
+}
+
+label>i {
+    font-size: 8px;
+    margin-right: -2px;
+    color: var(--Azul-deg-KS);
 }
 
 input[type=text] {
@@ -46,17 +50,36 @@ input[type=text] {
     border-radius: 3px;
 
     padding-left: 3px;
-    font-size: 12px;
+    font-size: 9px;
     color: var(--Negro-KS);
 
+    height: 17px;
 }
 
-/* input[type=text]:focus~label,
-input[type=text]:valid~label {
-    top: -0.5rem;
-    font-size: 0.8rem;
-    left: 0.8rem;
-} */
+input.error {
+    border-color: var(--Rojo-KS);
+}
+
+input.error~label,
+input.error~label>i {
+    color: var(--Rojo-KS);
+}
+
+input.error~label~i.fa-exclamation {
+    font-size: 10px;
+    color: var(--Rojo-KS);
+    position: absolute;
+    right: 7px;
+    top: 9px;
+}
+
+
+input[type=text]:focus~label {
+    top: -7px;
+    font-size: 10px;
+    left: 4px;
+    background-color: white;
+}
 
 
 
@@ -116,15 +139,4 @@ button.secondary3 {
 button.secondary2,
 button.secondary3 {
     background-color: var(--Blanco-KS);
-}
-
-
-
-
-
-
-
-
-input:focus ~ span {
-    color: red;
 }
