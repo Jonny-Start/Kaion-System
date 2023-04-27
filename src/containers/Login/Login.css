@@ -1,0 +1,116 @@
+:root {
+    --Negro-KS: #020101;
+    --Gris-KS: #484242;
+    --Azul-KS: #1F487E;
+    --Morado-KS: #55286F;
+    --Rojo-KS: #AB1919;
+    --Morado-deg-KS: rgb(85, 40, 111, 55%);
+    --Azul-deg-KS: rgb(31, 72, 126, 75%);
+    --Blanco-KS: #F8FBFF;
+
+    /*Deg-Azul-deg-KS-Morado-deg-KS*/
+    --Deg-Azul-Morado: Azul deg KS #1F487E 75% Morado deg KS #55286F 55%;
+}
+
+#contentlogin {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#contentFormLogin {
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+    color: var(--Azul-KS);
+}
+
+img#iconoKaionSystem {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 50px;
+}
+
+div.imgBackground {
+    /* width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #333;
+    background-image: url("../../icono.png");
+    background-size: cover;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+
+    /* width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 50px solid #333; */
+    /* background-size: 100% 100%;
+    transform: rotate(270deg); */
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../background.jpg");
+    background-size: 79% auto;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: relative;
+
+
+
+}
+
+div.imgBackground>div.colorGradient {
+    position: absolute;
+    text-align: right;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to left bottom, rgb(31 72 126 / 69%) 49%, #ffffffa1 50%);
+}
+
+div.imgBackground>div.colorGradient h2,
+div.imgBackground>div.colorGradient p {
+    color: white;
+}
+
+div.imgBackground>div.colorGradient h2 {
+    width: 80%;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding-left: 20%;
+}
+
+div.imgBackground>div.colorGradient h2>span {
+    margin-left: 70px;
+    font-weight: bold;
+}
+
+div.imgBackground>div.colorGradient p {
+    width: 50%;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    padding-left: 50%;
+    margin-top: 73px;
+    white-space: break-spaces;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+}

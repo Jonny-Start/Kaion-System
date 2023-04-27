@@ -23,7 +23,7 @@ div.contentInput {
     width: min-content;
     /* height: min-content; */
     /* height: 50px; */
-    margin: 5em;
+    /* margin: 5em; */
 }
 
 label {
@@ -44,7 +44,8 @@ label>i {
     color: var(--Azul-deg-KS);
 }
 
-input[type=text] {
+input.inputText,
+input.inputPassword {
     outline: none;
     border: 1px var(--Azul-KS) solid;
     border-radius: 3px;
@@ -58,6 +59,7 @@ input[type=text] {
 
 input.error {
     border-color: var(--Rojo-KS);
+    padding-right: 11PX;
 }
 
 input.error~label,
@@ -65,7 +67,15 @@ input.error~label>i {
     color: var(--Rojo-KS);
 }
 
-input.error~label~i.fa-exclamation {
+input.inputPassword~label~i.iconAccompaniesInput {
+    font-size: 10px;
+    color: var(--Azul-deg-KS);
+    position: absolute;
+    right: 7px;
+    top: 9px;
+}
+
+input.error~label~i.iconAccompaniesInput {
     font-size: 10px;
     color: var(--Rojo-KS);
     position: absolute;
@@ -73,8 +83,18 @@ input.error~label~i.fa-exclamation {
     top: 9px;
 }
 
+input.inputPassword {
+    padding-right: 19px;
+}
 
-input[type=text]:focus~label {
+label>span.inputRequired {
+    color: var(--Rojo-KS);
+}
+
+input.inputText:focus~label,
+input.inputPassword:focus~label,
+input.inputPassword.active~label,
+input.inputText.active~label {
     top: -7px;
     font-size: 10px;
     left: 4px;
