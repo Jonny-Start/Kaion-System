@@ -1,17 +1,3 @@
-:root {
-    --Negro-KS: #020101;
-    --Gris-KS: #484242;
-    --Azul-KS: #1F487E;
-    --Morado-KS: #55286F;
-    --Rojo-KS: #AB1919;
-    --Morado-deg-KS: rgb(85, 40, 111, 55%);
-    --Azul-deg-KS: rgb(31, 72, 126, 75%);
-    --Blanco-KS: #F8FBFF;
-
-    /*Deg-Azul-deg-KS-Morado-deg-KS*/
-    --Deg-Azul-Morado: Azul deg KS #1F487E 75% Morado deg KS #55286F 55%;
-}
-
 div#login {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
