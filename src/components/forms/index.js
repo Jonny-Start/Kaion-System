@@ -14,13 +14,13 @@ function Input({
   let iconInput;
   switch (icon) {
     case "email":
-      iconInput = <i class="fa-solid fa-envelope"></i>;
+      iconInput = <i className="fa-solid fa-envelope"></i>;
       break;
     case "password":
-      iconInput = <i class="fa-solid fa-lock"></i>;
+      iconInput = <i className="fa-solid fa-lock"></i>;
       break;
     case "phone":
-      iconInput = <i class="fa-solid fa-phone"></i>;
+      iconInput = <i className="fa-solid fa-phone"></i>;
       break;
     default:
       iconInput = "";
@@ -49,18 +49,18 @@ function Input({
       </label>
 
       {errorInput && type !== "password" && (
-        <i class="fa-solid fa-exclamation iconAccompaniesInput"></i>
+        <i className="fa-solid fa-exclamation iconAccompaniesInput"></i>
       )}
 
       {type === "password" && !!showPasword ? (
         <i
-          class="fa-regular fa-eye-slash iconAccompaniesInput"
+        className="fa-regular fa-eye-slash iconAccompaniesInput"
           onClick={() => changeTypeInput()}
         ></i>
       ) : (
         type === "password" && (
           <i
-            class="fa-regular fa-eye iconAccompaniesInput"
+          className="fa-regular fa-eye iconAccompaniesInput"
             onClick={() => changeTypeInput()}
           ></i>
         )
