@@ -1,0 +1,80 @@
+div#LandingPage {
+    background-color: var(--Blanco-KS);
+}
+
+div#LandingPage section#contentDevices {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 2em;
+}
+
+div#LandingPage section#contentDevices div#contentSlogan {
+    width: 100%;
+    text-align: left;
+    padding: 2%;
+}
+
+div#LandingPage section#contentDevices div#contentSlogan h2#titleSlogan {
+
+    font-size: 36px;
+    color: var(--Azul-KS);
+}
+
+div#LandingPage section#contentDevices div#contentSlogan p#text {
+    font-size: 12px;
+
+}
+
+div#LandingPage section#contentDevices div#contentImage {
+    text-align: center;
+    width: 100%;
+}
+
+div#LandingPage section#contentDevices div#contentImage img#imgDevice {
+    width: 50%;
+    padding: 2%;
+}
+
+div#LandingPage section#contentFeature {
+    text-align: center;
+}
+
+div#LandingPage section#contentFeature div#contentDescription {
+    width: 100%;
+}
+
+div#LandingPage section#contentFeature div#contentDescription h3#titleFeature {
+    color: var(--Azul-KS);
+}
+
+div#LandingPage section#contentFeature div#contentDescription h2#subtitleFeature {
+    font-weight: 100;
+    font-size: 13px;
+}
+
+div#LandingPage section#contentFeature div#contentDescription h4#descriptionFeature {
+    font-weight: 100;
+    font-size: 13px;
+}
+
+div#LandingPage section#contentFeature div#contentCards {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+div#LandingPage section#contentFeature div#contentCards div#contentCardFeature {
+    background-color: var(--Morado-deg-KS);
+    border-radius: 12px;
+    width: 25%;
+}
+
+div#LandingPage section#contentFeature div#contentCards div#contentCardFeature i {
+    font-size: 62px;
+}
+
+div#LandingPage section#contentFeature div#contentCards div#contentCardFeature h4#titleCard {}
+
+div#LandingPage section#contentFeature div#contentCards div#contentCardFeature p#descriptionCard {}
