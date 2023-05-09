@@ -28,17 +28,17 @@ function LandingPage() {
         </div>
         <div id="contentCards">
           <div id="contentCardFeature">
-            <i class="fa-solid fa-stopwatch"></i>
+            <i className="fa-solid fa-stopwatch"></i>
             <h4 id="titleCard"> Conteo de horas</h4>
             <p id="descriptionCard">{"Tengo muchas hooooras "}</p>
           </div>
           <div id="contentCardFeature">
-          <i class="fa-solid fa-chart-pie"></i>
+            <i className="fa-solid fa-chart-pie"></i>
             <h4 id="titleCard"> Conteo de horas</h4>
             <p id="descriptionCard">{" Tengo muchas hooas "}</p>
           </div>
           <div id="contentCardFeature">
-          <i class="fa-solid fa-sitemap"></i>
+            <i className="fa-solid fa-sitemap"></i>
             <h4 id="titleCard"> Conteo de horas</h4>
             <p id="descriptionCard">{"Tengo muchas hooooras "}</p>
           </div>
