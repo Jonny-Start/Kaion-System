@@ -1,0 +1,29 @@
+export function FetchData(url, dataSend, method) {
+  const myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+
+  const raw = JSON.stringify(dataSend);
+
+  const requestOptions = {
+    method: method,
+    headers: myHeaders,
+    body: raw,
+    redirect: "follow",
+  };
+  try {
+    return fetch(url, requestOptions)
+      .then(async (response) => {
+        return {
+          data: await response.text(),
+          status: response.status,
+        };
+      })
+      .catch((error) => {
+        console.log("Ocurrió un error:", error);
+        return error;
+      });
+  } catch (error) {
+    console.log("Ocurrió un error:", error);
+    return error;
+  }
+}

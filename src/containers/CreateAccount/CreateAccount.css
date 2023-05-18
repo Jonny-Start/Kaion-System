@@ -1,0 +1,194 @@
+section#CreateAccount * {
+    margin: 0;
+    padding: 0;
+}
+
+
+section#CreateAccount {
+    width: 100vw;
+    height: 100vh;
+    background-size: "cover";
+    background-position: center;
+    background-repeat: "no-repeat";
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 3em;
+    align-items: center;
+    justify-items: center;
+}
+
+section#CreateAccount div.cardForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 40em;
+    /* height: 50em; */
+    background-color: var(--Blanco-KS);
+    border-radius: 15px;
+    padding-bottom: 3em;
+
+    margin-right: 3em;
+    box-shadow: 1px 1px 20px var(--Azul-KS);
+}
+
+section#CreateAccount h1 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: 2.3rem;
+    color: var(--Azul-KS);
+}
+
+section#CreateAccount p {
+    color: var(--Azul-KS);
+    width: 80%;
+    text-align: center;
+
+}
+
+section#CreateAccount form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5em;
+    width: 55%;
+    margin-top: 2em;
+}
+
+section#CreateAccount .contentInput {
+    width: 100%;
+}
+
+section#CreateAccount .contentInput input,
+section#CreateAccount .contentInput select {
+    width: 100%;
+}
+
+section#CreateAccount .contentNumber {
+    display: flex;
+    gap: 5px;
+}
+
+section#CreateAccount .contentNumber .contentInput:first-child {
+    width: 20%;
+}
+
+section#CreateAccount .contentInput select {
+    outline: none;
+    border: 1px var(--Azul-KS) solid;
+    border-radius: 3px;
+    padding-left: 3px;
+    color: var(--Negro-KS);
+    width: 100%;
+    font-size: 1em;
+    height: 2em;
+}
+
+section#CreateAccount .contentTerms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+section#CreateAccount button {
+    width: 100%;
+    font-size: 1.3rem;
+    height: 2em;
+}
+
+section#CreateAccount span {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+section#CreateAccount button.signUpGoogle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+section#CreateAccount button.signUpGoogle img {
+    max-height: 50%;
+}
+
+/**
+** ----------------------------------------------------------------------------------------------------------- 
+**/
+
+section#CreateAccount .contentDescription {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    gap: 2em;
+    padding-left: 2em;
+
+    background-color: rgb(31 72 126 / 69%);
+    color: var(--Blanco-KS);
+    border-radius: 0px 20PX 20px 0px;
+    height: 70%;
+}
+
+section#CreateAccount .contentDescription h2 {
+    margin-top: 2em;
+    font-size: 2rem;
+}
+
+section#CreateAccount .contentDescription article {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: flex-start;
+    width: 95%;
+
+    min-height: 7em;
+}
+
+section#CreateAccount .contentDescription article i {
+    color: #02ff02;
+    font-size: 1.5em;
+}
+
+section#CreateAccount .contentDescription article p {
+    text-align: left;
+    color: var(--Blanco-KS);
+}
+
+
+/**
+** ----------------------------------------------------------------------------------------------------------- 
+**/
+
+section#CreateAccount div#iconoKaionSystem {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--Azul-KS);
+    /* opacity: 0.5; */
+}
+
+section#CreateAccount div#iconoKaionSystem>img {
+    width: 4rem;
+}
+
+
+
+
+section#CreateAccount .singInLink {
+    margin-top: 2em;
+    font-weight: 600;
+}
