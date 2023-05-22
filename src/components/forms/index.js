@@ -4,12 +4,14 @@ import "./forms.css";
 function Input({
   value,
   type,
-  // placeholder,
   id,
   classInput,
   textLabel,
   required,
   icon,
+  refVal,
+  onChangeinput,
+  onChangeType,
 }) {
   let iconInput;
   switch (icon) {
@@ -22,20 +24,29 @@ function Input({
     case "phone":
       iconInput = <i className="fa-solid fa-phone"></i>;
       break;
+    case "input":
+      iconInput = <i className="fa-solid fa-feather-pointed"></i>;
+      break;
     default:
       iconInput = "";
       break;
   }
 
-  const changeTypeInput = () => alert("cambio");
+  const [showPasword, setShowPasword] = React.useState(false);
+
+  const changeTypeInput = () => {
+    onChangeType();
+    setShowPasword((prevState) => !prevState);
+  };
   const errorInput = false;
-  const showPasword = false;
 
   return (
     <div className="contentInput">
       <input
         type={type}
         value={value}
+        ref={refVal}
+        onChange={onChangeinput ? () => onChangeinput() : undefined}
         // placeholder={placeholder}
         id={id ? id : `input${textLabel}`}
         className={`${classInput} ${errorInput && "error"} ${
@@ -54,14 +65,14 @@ function Input({
 
       {type === "password" && !!showPasword ? (
         <i
-        className="fa-regular fa-eye-slash iconAccompaniesInput"
-          onClick={() => changeTypeInput()}
+          className="fa-regular fa-eye-slash iconAccompaniesInput"
+          onClick={onChangeType ? () => changeTypeInput() : undefined}
         ></i>
       ) : (
         type === "password" && (
           <i
-          className="fa-regular fa-eye iconAccompaniesInput"
-            onClick={() => changeTypeInput()}
+            className="fa-regular fa-eye iconAccompaniesInput"
+            onClick={onChangeType ? () => changeTypeInput() : undefined}
           ></i>
         )
       )}
@@ -69,13 +80,14 @@ function Input({
   );
 }
 
-function Button({ typeStyleButton, textButton, typeButton }) {
+function Button({ typeStyleButton, textButton, typeButton, onAction }) {
   switch (typeStyleButton) {
     case "primary":
       return (
         <button
           className="buttonPrimary"
           type={typeButton ? typeButton : "button"}
+          onClick={() => onAction()}
         >
           {textButton ? textButton : "Text undefined"}
         </button>
@@ -85,6 +97,7 @@ function Button({ typeStyleButton, textButton, typeButton }) {
         <button
           className="secondary1"
           type={typeButton ? typeButton : "button"}
+          onClick={() => onAction()}
         >
           {textButton ? textButton : "Text undefined"}
         </button>
@@ -94,6 +107,7 @@ function Button({ typeStyleButton, textButton, typeButton }) {
         <button
           className="secondary2"
           type={typeButton ? typeButton : "button"}
+          onClick={() => onAction()}
         >
           {textButton ? textButton : "Text undefined"}
         </button>
@@ -103,6 +117,7 @@ function Button({ typeStyleButton, textButton, typeButton }) {
         <button
           className="secondary3"
           type={typeButton ? typeButton : "button"}
+          onClick={() => onAction()}
         >
           {textButton ? textButton : "Text undefined"}
         </button>

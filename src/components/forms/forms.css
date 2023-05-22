@@ -1,4 +1,3 @@
-
 /*
 **************************
 * Estilos de los inputs *
@@ -14,19 +13,23 @@ div.contentInput {
 }
 
 label {
-    font-size: 10px;
     color: var(--Azul-KS);
 
     transition: top 100ms ease-in, left 100ms ease-in, font-size 100ms ease-in;
     /* background-color: #060b23; */
     cursor: text;
     position: absolute;
-    left: 3px;
+    font-size: 1em;
+    left: 6px;
     top: 6px;
 }
 
+input {
+    background-color: var(--Blanco-KS);
+}
+
 label>i {
-    font-size: 8px;
+    font-size: 0.9em;
     margin-right: -2px;
     color: var(--Azul-deg-KS);
 }
@@ -38,10 +41,14 @@ input.inputPassword {
     border-radius: 3px;
 
     padding-left: 3px;
-    font-size: 9px;
+    /* font-size: 9px; */
     color: var(--Negro-KS);
 
-    height: 17px;
+    /* height: 17px; */
+
+    width: 15em;
+    font-size: 1em;
+    height: 2em;
 }
 
 input.error {
@@ -55,19 +62,19 @@ input.error~label>i {
 }
 
 input.inputPassword~label~i.iconAccompaniesInput {
-    font-size: 10px;
+    font-size: 1em;
     color: var(--Azul-deg-KS);
     position: absolute;
     right: 7px;
-    top: 9px;
+    top: 0.7em;
 }
 
 input.error~label~i.iconAccompaniesInput {
-    font-size: 10px;
+    font-size: 1em;
     color: var(--Rojo-KS);
     position: absolute;
     right: 7px;
-    top: 9px;
+    top: 7px;
 }
 
 input.inputPassword {
@@ -82,10 +89,10 @@ input.inputText:focus~label,
 input.inputPassword:focus~label,
 input.inputPassword.active~label,
 input.inputText.active~label {
-    top: -7px;
-    font-size: 10px;
-    left: 4px;
-    background-color: white;
+    top: -14px;
+    font-size: 0.8em;
+    left: 8px;
+    background-color: var(--Blanco-KS);
 }
 
 
@@ -107,14 +114,14 @@ button.secondary3 {
 }
 
 button.buttonPrimary {
-    font-size: 14px;
+    font-size: 1em;
     background-color: var(--Azul-KS);
     color: var(--Blanco-KS);
     border-radius: 3px;
     box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.53);
 
     border: 0px;
-    width: 170px;
+    width: 18em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }

@@ -71,6 +71,7 @@ div#LandingPage div#contentHeader span#contentButton button.secondary3 {
   --Morado-deg-KS: rgb(85, 40, 111, 55%);
   --Azul-deg-KS: rgb(31, 72, 126, 75%);
   --Blanco-KS: #F8FBFF; */
+
 div#LandingPage section#contentDevices {
     display: flex;
     width: 100%;
@@ -201,6 +202,7 @@ div#LandingPage section#contentPlans h2#titlePlans {
 } */
 
 div#LandingPage div#contentCardsPlans {
+
     display: flex;
     justify-content: space-evenly;
     width: 100%;
