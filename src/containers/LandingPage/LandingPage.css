@@ -1,11 +1,18 @@
 div#LandingPage {
     background-color: var(--Blanco-KS);
+    background-image: url("../../background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#LandingPage div#gradient {
+    background-image: linear-gradient(rgb(200 213 229 / 57%) 1%, #ffffff 100%);
 }
 
 div#LandingPage div#contentHeader {
     background-color: var(--Blanco-KS);
     width: 100%;
-    height: 4em;
+    height: 5em;
     position: fixed;
     display: flex;
     flex-wrap: nowrap;
@@ -13,7 +20,8 @@ div#LandingPage div#contentHeader {
     box-shadow: 1px -4px 5px;
     top: 0;
     gap: 18px;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    z-index: 3;
 }
 
 div#LandingPage h2#titleHeader {
@@ -24,24 +32,36 @@ div#LandingPage h2#titleHeader {
 
 div#LandingPage span#contentIcon {
     width: 50%;
-    /* display: flex;
-    align-items: center; */
     display: inherit;
     align-items: center;
-    justify-content: flex-start;
 }
 
 div#LandingPage img#iconoKaionSystem {
-    width: 7%;
+    width: 10%;
     margin-right: 0.3em;
+    margin-left: 0.7em;
 }
 
 div#LandingPage span#contentButton {
     display: inherit;
     align-items: center;
     gap: 9px;
+    margin-right: 1em;
 }
 
+div#LandingPage div#contentHeader span#contentButton button.buttonPrimary {
+    width: 110px;
+    font-weight: 600;
+    box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.53);
+    height: 30px;
+}
+
+div#LandingPage div#contentHeader span#contentButton button.secondary3 {
+    box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.53);
+    font-weight: 600;
+    width: 110px;
+    height: 30px;
+}
 
 /* --Negro-KS: #020101;
   --Gris-KS: #484242;
@@ -64,6 +84,7 @@ div#LandingPage div#contentSlogan {
     width: 100%;
     text-align: left;
     padding: 2%;
+    padding-left: 8%;
 }
 
 div#LandingPage h2#titleSlogan {
@@ -77,18 +98,34 @@ div#LandingPage p#text {
     font-weight: 500;
 }
 
+div#LandingPage span#contentButtonSlogan {
+    text-align: right;
+}
+
+div#LandingPage span#contentButtonSlogan button.buttonPrimary {
+    height: 2em;
+    font-size: 16px;
+    font-weight: 700;
+    width: 9em;
+}
+
 div#LandingPage div#contentImage {
     text-align: center;
     width: 100%;
 }
 
-div#LandingPage img#imgDevice {
-    width: 50%;
+div#LandingPage div#contentImage img#iconoDevices {
+    width: 66%;
     padding: 2%;
 }
 
 div#LandingPage section#contentFeature {
     text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-image: linear-gradient(rgb(200 213 229 / 0%) 3%, #F8FBFF 100%);
+    box-shadow: 0px 5px 5px rgb(0 0 0 / 25%);
+    padding-bottom: 0.5em;
 }
 
 div#LandingPage div#contentDescription {
@@ -97,25 +134,32 @@ div#LandingPage div#contentDescription {
 
 div#LandingPage h3#titleFeature {
     color: var(--Azul-KS);
-    font-size: 21px;
+    font-size: 25px;
+    margin-bottom: 0;
 }
 
 div#LandingPage h2#subtitleFeature {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 17px;
 }
 
-div#LandingPage div.contentFeatures {
+div#LandingPage div#contentCardsFeatures {
     display: flex;
+    align-items: center;
     justify-content: space-around;
 }
+
+/* div#LandingPage div.contentFeatures {
+    display: flex;
+    justify-content: space-around;
+} */
 
 div#LandingPage div.feature {
     display: flex;
     align-items: center;
-    background-color: #EBEBEB;
+    background-color: #55286f1c;
     border-radius: 11px;
-    height: 6em;
+    height: auto;
     margin-bottom: 1em;
 }
 
@@ -133,26 +177,236 @@ div#LandingPage span.descriptionFeature {
     word-break: break-all;
     padding: 0.5em;
 }
-div#LandingPage span.descriptionFeature h4{
-    color: #55286F;
+
+div#LandingPage span.descriptionFeature h4 {
+    color: var(--Negro-KS);
     margin-bottom: 0;
+    margin-top: 0.3em;
 }
-div#LandingPage span.descriptionFeature p{
+
+div#LandingPage span.descriptionFeature p {
     margin-top: 0.5em;
 }
+
+div#LandingPage section#contentPlans {
+    text-align: center;
+}
+
+div#LandingPage section#contentPlans h2#titlePlans {
+    color: var(--Azul-KS);
+}
+
+/* div#LandingPage section#contentPlans h3 {
+    font-weight: 400;
+} */
+
 div#LandingPage div#contentCardsPlans {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
 
-div#LandingPage div#contentCardPrice {
-    background-color: var(--Morado-deg-KS);
-    border-radius: 12px;
-    width: 25%;
+div#LandingPage div.contentCardPrice {
+    width: 30%;
+    height: 18em;
+    border-radius: 23px;
+    border: 2px solid var(--Morado-KS);
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin-bottom: 1em;
+}
+
+div#LandingPage div.contentCardPrice:hover {
+    border: 2px solid var(--Azul-KS);
+    animation: move 1s infinite alternate;
+    box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.53);
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    50% {
+        transform: translate(0%, 0%);
+    }
+
+    100% {
+        transform: translate(0%, -3%);
+    }
 }
 
 
-/* div#LandingPage h4#titleCard {}
+div#LandingPage div.contentTitleCard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #80808059;
+}
 
-div#LandingPage p#descriptionCard {} */
+div#LandingPage span.typePrice {
+    display: inherit;
+    color: var(--Morado-KS);
+}
+
+div#LandingPage span.typePlan h3.h3Plan {
+    margin: 0;
+    font-size: 20px;
+    color: var(--Azul-KS);
+}
+
+div#LandingPage span.typePrice h2.h2price {
+    font-size: 45px;
+    margin: 0;
+}
+
+div#LandingPage div.contentDescriptionCard {
+    margin: 2em;
+    color: var(--Negro-KS);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div#LandingPage div.contentDescriptionCard h2.h2Description {
+    font-size: 15px;
+
+}
+
+div#LandingPage span.descriptionPlan {
+    text-align: justify;
+}
+
+div#LandingPage span.descriptionPlan i {
+    color: var(--Morado-KS);
+}
+
+div#LandingPage div.contentButton {
+    text-align: center;
+}
+
+div#LandingPage div.contentButton button.secondary1 {
+    width: 88%;
+    height: 50%;
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+div#LandingPage div#contentFooter {
+    display: flex;
+    height: 24%;
+    position: static;
+    background: var(--Azul-KS);
+    margin-top: 1em;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--Blanco-KS);
+}
+
+div#LandingPage span#titleFooter #h2TitleFooter {
+    margin-bottom: 0;
+}
+
+div#LandingPage span#titleFooter p#pDataFooter {
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+
+div#LandingPage span#descriptionFooter {
+    width: 62%;
+}
+
+div#LandingPage h4#h4DescriptionFooter {
+    font-weight: 500;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+@media (max-width: 746px) {
+    div#LandingPage div.contentButton button.secondary1 {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 690px) {
+
+    /* @media only screen and (orientation: portrait) { */
+    div#LandingPage section#contentDevices {
+        display: block;
+    }
+
+    div#LandingPage div#contentSlogan {
+        width: auto;
+        padding-left: 6%;
+    }
+
+    div#LandingPage div#contentDescription {
+        width: auto;
+        word-break: break-word;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    div#LandingPage div#contentCardsFeatures {
+        display: block;
+        margin: 1em;
+    }
+
+    div#LandingPage div.contentFeatures {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+    }
+
+    div#LandingPage div.feature {
+        margin: 0.5em;
+    }
+
+    div#LandingPage div#contentCardsPlans {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div#LandingPage div.contentCardPrice {
+        width: 90%;
+    }
+
+    div#LandingPage div#contentFooter {
+        display: flex;
+        height: 24%;
+        position: static;
+        background: var(--Azul-KS);
+        margin-top: 1em;
+        color: var(--Blanco-KS);
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    div#LandingPage span#descriptionFooter {
+        width: auto;
+    }
+
+    div#LandingPage span#titleFooter #h2TitleFooter {
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width: 432px) {
+    div#LandingPage div.contentFeatures {
+        display: block;
+    }
+}
+
+@media (max-width: 460px) {
+    div#LandingPage img#iconoKaionSystem {
+        width: 28%;
+    }
+
+    div#LandingPage h2#titleHeader {
+        font-size: 17px;
+    }
+}
