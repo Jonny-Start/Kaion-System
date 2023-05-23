@@ -34,7 +34,7 @@ div.NotFound {
   color: var(--color);
   perspective: 1200px;
 }
-div.NotFound a {
+div.NotFound button {
   text-transform: uppercase;
   text-decoration: none;
   background: var(--button);

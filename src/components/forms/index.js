@@ -87,7 +87,7 @@ function Button({ typeStyleButton, textButton, typeButton, onAction }) {
         <button
           className="buttonPrimary"
           type={typeButton ? typeButton : "button"}
-          onClick={() => onAction()}
+          onClick={onAction ? () => onAction() : undefined}
         >
           {textButton ? textButton : "Text undefined"}
         </button>
@@ -97,7 +97,7 @@ function Button({ typeStyleButton, textButton, typeButton, onAction }) {
         <button
           className="secondary1"
           type={typeButton ? typeButton : "button"}
-          onClick={() => onAction()}
+          onClick={onAction ? () => onAction() : undefined}
         >
           {textButton ? textButton : "Text undefined"}
         </button>
@@ -107,7 +107,7 @@ function Button({ typeStyleButton, textButton, typeButton, onAction }) {
         <button
           className="secondary2"
           type={typeButton ? typeButton : "button"}
-          onClick={() => onAction()}
+          onClick={onAction ? () => onAction() : undefined}
         >
           {textButton ? textButton : "Text undefined"}
         </button>
@@ -117,7 +117,7 @@ function Button({ typeStyleButton, textButton, typeButton, onAction }) {
         <button
           className="secondary3"
           type={typeButton ? typeButton : "button"}
-          onClick={() => onAction()}
+          onClick={onAction ? () => onAction() : undefined}
         >
           {textButton ? textButton : "Text undefined"}
         </button>

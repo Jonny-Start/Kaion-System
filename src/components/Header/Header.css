@@ -1,0 +1,76 @@
+.topbar * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.topbar h1 {
+    color: var(--Morado-KS);
+}
+
+.topbar {
+    width: 100%;
+    background: var(--Blanco-KS);
+    height: 60px;
+    padding-left: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar .toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.topbar .toggle::before {
+    content: '\f0c9';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-size: 24px;
+    text-align: center;
+    color: var(--Negro-KS);
+}
+
+.topbar .user {
+    position: relative;
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    /* border-radius: 50%; */
+    overflow: hidden;
+    cursor: pointer;
+
+    /* margin-right: 0.5em; */
+}
+
+.topbar .user img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    /* height: 100%; */
+    width: 2em;
+    object-fit: cover;
+}
+
+@media (max-width: 480px) {
+
+    .topbar .toggle.active {
+        position: fixed;
+        z-index: 10000;
+        right: 0;
+        left: initial;
+    }
+
+    .topbar .toggle.active::before {
+        color: var(--Blanco-KS);
+    }
+
+}

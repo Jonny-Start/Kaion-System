@@ -2,7 +2,7 @@ import React from "react";
 import "./Login.css";
 import imgIcono from "./../../icono.png";
 import { Button, Input } from "../../components/forms";
-import { Navigate, Link } from "react-router-dom";
+import { Navigate, Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/auth";
 
 function Login() {
@@ -12,6 +12,12 @@ function Login() {
   const passwordInput = React.useRef(null);
 
   const auth = useAuth();
+
+  const navigate = useNavigate();
+
+  const handleBack = () => {
+    return navigate("/");
+  };
 
   const login = (e) => {
     e.preventDefault();
@@ -41,7 +47,12 @@ function Login() {
 
   return (
     <section id="login">
-      <img src={imgIcono} alt="icono Kaion-System" id="iconoKaionSystem" />
+      <img
+        src={imgIcono}
+        alt="icono Kaion-System"
+        id="iconoKaionSystem"
+        onClick={() => handleBack()}
+      />
 
       <section id="contentFormLogin">
         <h1>Ingresa a tu cuenta</h1>

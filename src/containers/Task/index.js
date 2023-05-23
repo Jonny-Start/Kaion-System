@@ -1,13 +1,13 @@
 import React from "react";
-import "./Home.css";
+import "./Task.css";
 import { BasicLayout } from "../../components/BasicLayout";
 
-function Home() {
+function Task() {
   return (
-    <BasicLayout idContent="Home">
-      <h1>Hola Home</h1>
+    <BasicLayout idContent="Task">
+      <h1>Hola Task</h1>
     </BasicLayout>
   );
 }
 
-export { Home };
+export { Task };
