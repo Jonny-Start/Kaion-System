@@ -16,19 +16,68 @@
     background: var(--Blanco-KS);
 }
 
+.main.backgroundImg {
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-blend-mode: color-burn;
+    background-attachment: fixed;
+
+    animation-name: moveBackground;
+    animation-duration: 140s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.99, 0.99, 0.01, -0.01);
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: center;
+    }
+
+    10% {
+        background-position: bottom;
+    }
+
+    20% {
+        background-position: left;
+    }
+
+    30% {
+        background-position: bottom;
+    }
+
+    40% {
+        background-position: right;
+    }
+
+    50% {
+        background-position: top;
+    }
+
+    60% {
+        background-position: inherit;
+    }
+
+    70% {
+        background-position: right;
+    }
+
+    80% {
+        background-position: left;
+    }
+
+    90% {
+        background-position: bottom;
+    }
+
+    100% {
+        background-position: center;
+    }
+}
+
+
 .main.active {
     width: calc(100% - 60px);
     left: 60px;
-}
-
-.main .topbar {
-    width: 100%;
-    background: var(--Blanco-KS);
-    height: 60px;
-    padding-left: 0 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 @media (max-width: 992px) {

@@ -1,0 +1,146 @@
+div#Home #sectionDateNow {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+div#Home #sectionDateNow button {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+div#Home #containerWeeks {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1px;
+}
+
+div#Home #containerWeeks button {
+    background-color: var(--Morado-deg-KS);
+    color: var(--Blanco-KS);
+    border-color: transparent;
+    width: 11%;
+    min-height: 1.5em;
+    font-size: 1.5em;
+}
+
+div#Home #containerWeeks button.active {
+    background-color: var(--Morado-KS);
+}
+
+div#Home #containerWeeks button:first-child {
+    border-radius: 8px 0px 0px 8px;
+}
+
+div#Home #containerWeeks button:last-child {
+    border-radius: 0px 8px 8px 0px;
+
+}
+
+div#Home #contentTime {
+    text-align: center;
+    margin-top: 2em;
+}
+
+div#Home #contentTime .cardTime {
+    position: relative;
+    background-color: #f8fbff73;
+    margin-left: 11%;
+    margin-right: 11%;
+    border: 1px solid var(--Morado-KS);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+div#Home #contentTime .cardTime .sectionLeft {
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+}
+
+div#Home #contentTime .cardTime .sectionLeft h3 {
+    position: absolute;
+    background-color: #f8fbff;
+    top: -15px;
+    border-radius: 5px;
+    margin: 0;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+
+}
+
+div#Home #contentTime .cardTime .sectionLeft .taskName {
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 0.3em;
+}
+
+div#Home #contentTime .cardTime .sectionLeft .descriptionOrNote {
+    margin: 0;
+    color: var(--Gris-KS);
+    opacity: 0.6;
+}
+
+
+div#Home #contentTime .cardTime .sectionRight {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 0.8em;
+}
+
+div#Home #contentTime .cardTime .sectionRight .timerAndEstimate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+div#Home #contentTime .cardTime .sectionRight .timerAndEstimate p {
+    margin: 0;
+    color: var(--Gris-KS);
+    opacity: 0.6;
+}
+
+div#Home #contentTime .cardTime .sectionRight .timerAndEstimate span.viewTime {
+    font-weight: bold;
+    color: var(--Azul-KS);
+    font-size: 1.5em;
+}
+
+div#Home #contentTime .cardTime .sectionRight .buttonPrimary {
+    width: 7em;
+}
+
+div#Home #contentTime .cardTime .sectionRight .secondary1 {
+    width: 3em;
+    margin-right: 1em;
+}

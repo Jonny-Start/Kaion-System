@@ -80,7 +80,13 @@ function Input({
   );
 }
 
-function Button({ typeStyleButton, textButton, typeButton, onAction }) {
+function Button({
+  typeStyleButton,
+  textButton,
+  typeButton,
+  onAction,
+  children,
+}) {
   switch (typeStyleButton) {
     case "primary":
       return (
@@ -89,7 +95,9 @@ function Button({ typeStyleButton, textButton, typeButton, onAction }) {
           type={typeButton ? typeButton : "button"}
           onClick={onAction ? () => onAction() : undefined}
         >
-          {textButton ? textButton : "Text undefined"}
+          {!textButton && !children && "Text undefined"}
+          {textButton && textButton}
+          {children && children}
         </button>
       );
     case "secondary1":
@@ -99,7 +107,9 @@ function Button({ typeStyleButton, textButton, typeButton, onAction }) {
           type={typeButton ? typeButton : "button"}
           onClick={onAction ? () => onAction() : undefined}
         >
-          {textButton ? textButton : "Text undefined"}
+          {!textButton && !children && "Text undefined"}
+          {textButton && textButton}
+          {children && children}
         </button>
       );
     case "secondary2":
@@ -109,7 +119,9 @@ function Button({ typeStyleButton, textButton, typeButton, onAction }) {
           type={typeButton ? typeButton : "button"}
           onClick={onAction ? () => onAction() : undefined}
         >
-          {textButton ? textButton : "Text undefined"}
+          {!textButton && !children && "Text undefined"}
+          {textButton && textButton}
+          {children && children}
         </button>
       );
     case "secondary3":
@@ -119,7 +131,9 @@ function Button({ typeStyleButton, textButton, typeButton, onAction }) {
           type={typeButton ? typeButton : "button"}
           onClick={onAction ? () => onAction() : undefined}
         >
-          {textButton ? textButton : "Text undefined"}
+          {!textButton && !children && "Text undefined"}
+          {textButton && textButton}
+          {children && children}
         </button>
       );
     default:

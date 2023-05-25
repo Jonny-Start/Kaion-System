@@ -50,6 +50,10 @@
     margin-bottom: 20px;
 }
 
+.navigation ul li:nth-child(1) .contentOptionNav .title h2 {
+    font-size: 1.5em;
+}
+
 .navigation ul li:nth-child(1):hover {
     background: transparent;
 }
@@ -96,6 +100,10 @@
     height: 60px;
     line-height: 60px;
     white-space: nowrap;
+}
+
+.navigation ul li .contentOptionNav .title h2 {
+    font-size: 1rem;
 }
 
 
