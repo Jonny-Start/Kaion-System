@@ -89,7 +89,7 @@ input.inputText:focus~label,
 input.inputPassword:focus~label,
 input.inputPassword.active~label,
 input.inputText.active~label {
-    top: -14px;
+    top: -16px;
     font-size: 0.8em;
     left: 8px;
     background-color: var(--Blanco-KS);

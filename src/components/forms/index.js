@@ -80,16 +80,24 @@ function Input({
   );
 }
 
-function Button({ typeStyleButton, textButton, typeButton, onAction }) {
+function Button({
+  typeStyleButton,
+  textButton,
+  typeButton,
+  onAction,
+  children,
+}) {
   switch (typeStyleButton) {
     case "primary":
       return (
         <button
           className="buttonPrimary"
           type={typeButton ? typeButton : "button"}
-          onClick={() => onAction()}
+          onClick={onAction ? () => onAction() : undefined}
         >
-          {textButton ? textButton : "Text undefined"}
+          {!textButton && !children && "Text undefined"}
+          {textButton && textButton}
+          {children && children}
         </button>
       );
     case "secondary1":
@@ -97,9 +105,11 @@ function Button({ typeStyleButton, textButton, typeButton, onAction }) {
         <button
           className="secondary1"
           type={typeButton ? typeButton : "button"}
-          onClick={() => onAction()}
+          onClick={onAction ? () => onAction() : undefined}
         >
-          {textButton ? textButton : "Text undefined"}
+          {!textButton && !children && "Text undefined"}
+          {textButton && textButton}
+          {children && children}
         </button>
       );
     case "secondary2":
@@ -107,9 +117,11 @@ function Button({ typeStyleButton, textButton, typeButton, onAction }) {
         <button
           className="secondary2"
           type={typeButton ? typeButton : "button"}
-          onClick={() => onAction()}
+          onClick={onAction ? () => onAction() : undefined}
         >
-          {textButton ? textButton : "Text undefined"}
+          {!textButton && !children && "Text undefined"}
+          {textButton && textButton}
+          {children && children}
         </button>
       );
     case "secondary3":
@@ -117,9 +129,11 @@ function Button({ typeStyleButton, textButton, typeButton, onAction }) {
         <button
           className="secondary3"
           type={typeButton ? typeButton : "button"}
-          onClick={() => onAction()}
+          onClick={onAction ? () => onAction() : undefined}
         >
-          {textButton ? textButton : "Text undefined"}
+          {!textButton && !children && "Text undefined"}
+          {textButton && textButton}
+          {children && children}
         </button>
       );
     default:

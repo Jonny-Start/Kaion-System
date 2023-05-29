@@ -1,0 +1,185 @@
+div#TaskAssignment .contentinputs {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(100% - 40px);
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 10px;
+    margin-top: 2em;
+}
+
+div#TaskAssignment h1 {
+    color: var(--Azul-KS);
+    text-align: center;
+}
+
+
+div#TaskAssignment select {
+    outline: none;
+    border: 1px var(--Azul-KS) solid;
+    border-radius: 3px;
+    padding-left: 3px;
+    color: var(--Negro-KS);
+    font-size: 1em;
+    height: 2.2em;
+
+    color: var(--Azul-KS);
+    background-color: var(--Blanco-KS);
+}
+
+div#TaskAssignment div.contentInput,
+div#TaskAssignment select {
+    width: 25em;
+}
+
+div#TaskAssignment div.contentInput input {
+    width: 100%;
+}
+
+div#TaskAssignment div.contentInput input.time {
+    outline: none;
+    border: 1px var(--Azul-KS) solid;
+    border-radius: 3px;
+    padding-left: 3px;
+    color: var(--Negro-KS);
+    width: 4em;
+    font-size: 1em;
+    height: 2em;
+    text-align: center;
+}
+
+div#TaskAssignment .contentBtn {
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+}
+
+
+div#TaskAssignment .lastContentInput .contentTime {
+    width: 4em;
+}
+
+div#TaskAssignment .lastContentInput .contentTime~.contentInput {
+    width: 46em;
+}
+
+
+
+
+/* ******************************* */
+/* *********Content Time********** */
+/* ******************************* */
+
+
+div#TaskAssignment #sectionDateNow {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+div#TaskAssignment #sectionDateNow button {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+div#TaskAssignment #contentTime {
+    text-align: center;
+    margin-top: 2em;
+}
+
+div#TaskAssignment #contentTime .cardTime {
+    position: relative;
+    background-color: #f8fbff73;
+    margin-left: 11%;
+    margin-right: 11%;
+    border: 1px solid var(--Morado-KS);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+div#TaskAssignment #contentTime .cardTime .sectionLeft {
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+}
+
+div#TaskAssignment #contentTime .cardTime .sectionLeft h3 {
+    position: absolute;
+    background-color: #f8fbff;
+    top: -15px;
+    border-radius: 5px;
+    margin: 0;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+
+}
+
+div#TaskAssignment #contentTime .cardTime .sectionLeft .taskName {
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 0.3em;
+}
+
+div#TaskAssignment #contentTime .cardTime .sectionLeft .descriptionOrNote {
+    margin: 0;
+    color: var(--Gris-KS);
+    opacity: 0.6;
+}
+
+
+div#TaskAssignment #contentTime .cardTime .sectionRight {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 0.8em;
+}
+
+div#TaskAssignment #contentTime .cardTime .sectionRight .timerAndEstimate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+div#TaskAssignment #contentTime .cardTime .sectionRight .timerAndEstimate span.viewTime {
+    font-weight: bold;
+    color: var(--Azul-KS);
+    font-size: 1.5em;
+}
+
+div#TaskAssignment #contentTime .cardTime .sectionRight .buttonPrimary {
+    width: 7em;
+}
+
+div#TaskAssignment #contentTime .cardTime .sectionRight .secondary1 {
+    width: 3em;
+    margin-right: 1em;
+}
