@@ -3,14 +3,21 @@ section#CreateAccount * {
     padding: 0;
 }
 
-
 section#CreateAccount {
     width: 100vw;
-    height: 100vh;
-    background-size: "cover";
+    height: 100%;
+    background-size: cover;
     background-position: center;
-    background-repeat: "no-repeat";
+    background-repeat: no-repeat;
+}
 
+div#CreateAccountFondo {
+    background-image: linear-gradient(to right bottom, rgb(31 72 126 / 64%) 55%, #f8fbff94 50%);
+    width: 100vw;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 3em;
@@ -125,12 +132,11 @@ section#CreateAccount .contentDescription {
     flex-direction: column;
     /* width: 100%; */
     gap: 2em;
-    padding-left: 2em;
-
-    background-color: rgb(31 72 126 / 69%);
+    padding-left: 6em;
+    /* background-color: rgb(31 72 126 / 69%); */
     color: var(--Blanco-KS);
     border-radius: 0px 20PX 20px 0px;
-    height: 70%;
+    height: 92%;
 }
 
 section#CreateAccount .contentDescription h2 {

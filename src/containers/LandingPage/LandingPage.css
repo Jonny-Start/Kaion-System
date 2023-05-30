@@ -10,7 +10,7 @@ div#LandingPage div#gradient {
 }
 
 div#LandingPage div#contentHeader {
-    background-color: var(--Blanco-KS);
+    background-color: rgb(200 213 229 / 93%);
     width: 100%;
     height: 5em;
     position: fixed;
@@ -37,7 +37,7 @@ div#LandingPage span#contentIcon {
 }
 
 div#LandingPage img#iconoKaionSystem {
-    width: 10%;
+    width: 8%;
     margin-right: 0.3em;
     margin-left: 0.7em;
 }
@@ -162,6 +162,7 @@ div#LandingPage div.feature {
     border-radius: 11px;
     height: auto;
     margin-bottom: 1em;
+    padding: 1em;
 }
 
 div#LandingPage div.feature i {
