@@ -31,7 +31,7 @@ function AccountChange() {
               <p>
                 <span>Active: </span> SI
               </p>
-              <a href="#">
+              <a >
                 <i className="fa-solid fa-arrows-down-to-people"></i> Cambiar
               </a>
             </div>
@@ -59,7 +59,7 @@ function AccountChange() {
               <p>
                 <span>Active: </span> SI
               </p>
-              <a href="#">
+              <a >
                 <i className="fa-solid fa-arrows-down-to-people"></i> Cambiar
               </a>
             </div>
@@ -86,7 +86,7 @@ function AccountChange() {
               <p>
                 <span>Active: </span> SI
               </p>
-              <a href="#">
+              <a >
                 <i className="fa-solid fa-arrows-down-to-people"></i> Cambiar
               </a>
             </div>
@@ -113,7 +113,7 @@ function AccountChange() {
               <p>
                 <span>Active: </span> SI
               </p>
-              <a href="#">
+              <a >
                 <i className="fa-solid fa-arrows-down-to-people"></i> Cambiar
               </a>
             </div>

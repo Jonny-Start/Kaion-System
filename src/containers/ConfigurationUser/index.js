@@ -4,95 +4,122 @@ import { BasicLayout } from "../../components/BasicLayout";
 
 function ConfigurationUser() {
   return (
-    <BasicLayout idContent="ConfigurationUser">
-      <h1>Hola ConfigurationUser</h1>
+    <BasicLayout idContent="ConfigurationUser" backgroundImage={true}>
       <div className="recentOrders">
-        <div className="cardHeader">
-          <h2>Recent Orders</h2>
-          <a href="" className="btn">
-            View All
-          </a>
-        </div>
         <table>
           <thead>
             <tr>
-              <td>Name</td>
-              <td>Price</td>
-              <td>Payment</td>
-              <td>Status</td>
+              <td>
+                Nombre <input type="search" placeholder="Buscar" />
+              </td>
+              <td>
+                Email <input type="search" placeholder="Buscar" />
+              </td>
+              <td>
+                Numero telefonico <input type="search" placeholder="Buscar" />
+              </td>
+              <td>Activo</td>
+              <td>Eliminar</td>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Star Refrigerator</td>
-              <td>$1200</td>
-              <td>Paid</td>
+              <td>Jonny Cano</td>
+              <td>jonny.cano@gmail.com</td>
+              <td>+57 3015018468</td>
               <td>
-                <span className="status delivered">Delivered</span>
+                <i className="fa-solid fa-check" style={{ color: "green" }} title="Cambiar estado"></i>
+              </td>
+              <td>
+                <i className="fa-solid fa-trash" style={{ color: "red" }} title="Eliminar"></i>
               </td>
             </tr>
             <tr>
-              <td>Window Coolers</td>
-              <td>$110</td>
-              <td>Due</td>
+              <td>Jonny Cano</td>
+              <td>jonny.cano@gmail.com</td>
+              <td>+57 3015018468</td>
               <td>
-                <span className="status pending">Pending</span>
+                <i className="fa-solid fa-check" style={{ color: "green" }} title="Cambiar estado"></i>
+              </td>
+              <td>
+                <i className="fa-solid fa-trash" style={{ color: "red" }} title="Eliminar"></i>
               </td>
             </tr>
             <tr>
-              <td>Speakers</td>
-              <td>$620</td>
-              <td>Paid</td>
+              <td>Jonny Cano</td>
+              <td>jonny.cano@gmail.com</td>
+              <td>+57 3015018468</td>
               <td>
-                <span className="status return">Delivered</span>
+                <i className="fa-solid fa-check" style={{ color: "green" }} title="Cambiar estado"></i>
+              </td>
+              <td>
+                <i className="fa-solid fa-trash" style={{ color: "red" }} title="Eliminar"></i>
               </td>
             </tr>
             <tr>
-              <td>Hp Laptop</td>
-              <td>$6000</td>
-              <td>Due</td>
+              <td>Jonny Cano</td>
+              <td>jonny.cano@gmail.com</td>
+              <td>+57 3015018468</td>
               <td>
-                <span className="status inprogress">In Progress</span>
+                <i className="fa-solid fa-check" style={{ color: "green" }} title="Cambiar estado"></i>
+              </td>
+              <td>
+                <i className="fa-solid fa-trash" style={{ color: "red" }} title="Eliminar"></i>
               </td>
             </tr>
             <tr>
-              <td>Star Refrigerator</td>
-              <td>$1200</td>
-              <td>Paid</td>
+              <td>Jonny Cano</td>
+              <td>jonny.cano@gmail.com</td>
+              <td>+57 3015018468</td>
               <td>
-                <span className="status delivered">Delivered</span>
+                <i className="fa-solid fa-check" style={{ color: "green" }} title="Cambiar estado"></i>
+              </td>
+              <td>
+                <i className="fa-solid fa-trash" style={{ color: "red" }} title="Eliminar"></i>
               </td>
             </tr>
             <tr>
-              <td>Window Coolers</td>
-              <td>$110</td>
-              <td>Due</td>
+              <td>Jonny Cano</td>
+              <td>jonny.cano@gmail.com</td>
+              <td>+57 3015018468</td>
               <td>
-                <span className="status pending">Pending</span>
+                <i className="fa-solid fa-check" style={{ color: "green" }} title="Cambiar estado"></i>
+              </td>
+              <td>
+                <i className="fa-solid fa-trash" style={{ color: "red" }} title="Eliminar"></i>
               </td>
             </tr>
             <tr>
-              <td>Speakers</td>
-              <td>$620</td>
-              <td>Paid</td>
+              <td>Jonny Cano</td>
+              <td>jonny.cano@gmail.com</td>
+              <td>+57 3015018468</td>
               <td>
-                <span className="status return">Delivered</span>
+                <i className="fa-solid fa-check" style={{ color: "green" }} title="Cambiar estado"></i>
+              </td>
+              <td>
+                <i className="fa-solid fa-trash" style={{ color: "red" }} title="Eliminar"></i>
               </td>
             </tr>
             <tr>
-              <td>Hp Laptop</td>
-              <td>$6000</td>
-              <td>Due</td>
+              <td>Jonny Cano</td>
+              <td>jonny.cano@gmail.com</td>
+              <td>+57 3015018468</td>
               <td>
-                <span className="status inprogress">In Progress</span>
+                <i className="fa-solid fa-check" style={{ color: "green" }} title="Cambiar estado"></i>
+              </td>
+              <td>
+                <i className="fa-solid fa-trash" style={{ color: "red" }} title="Eliminar"></i>
               </td>
             </tr>
             <tr>
-              <td>Apple Watch</td>
-              <td>$680</td>
-              <td>Paid</td>
+              <td>Jonny Cano</td>
+              <td>jonny.cano@gmail.com</td>
+              <td>+57 3015018468</td>
               <td>
-                <span className="status delivered">Delivered</span>
+                <i className="fa-solid fa-check" style={{ color: "green" }} title="Cambiar estado"></i>
+              </td>
+              <td>
+                <i className="fa-solid fa-trash" style={{ color: "red" }} title="Eliminar"></i>
               </td>
             </tr>
           </tbody>

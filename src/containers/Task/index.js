@@ -7,7 +7,7 @@ function Task() {
     <BasicLayout idContent="Task">
       <div className="recentOrders">
         <div className="cardHeader">
-          <a href="" className="btn">
+          <a  className="btn">
             Crear nuevo
           </a>
         </div>

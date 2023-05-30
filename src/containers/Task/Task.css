@@ -24,8 +24,8 @@ div#Task .cardHeader h2 {
 div#Task .btn {
     position: relative;
     padding: 5px 10px;
-    background: #03a9f4;
-    color: #fff;
+    background: var(--Azul-KS);
+    color: var(--Blanco-KS);
     text-decoration: none;
     border-radius: 6px;
 }
@@ -58,8 +58,8 @@ div#Task .recentOrders table tr:last-child {
 }
 
 div#Task .recentOrders table tbody tr:hover {
-    background: #03a9f4;
-    color: #fff;
+    background: var(--Azul-KS);
+    color: var(--Blanco-KS);
 }
 
 div#Task .recentOrders table tr td {
@@ -86,7 +86,7 @@ div#Task .recentOrders table tbody tr td:nth-child(3) {
 div#Task .status {
     position: relative;
     padding: 2px 4px;
-    color: #fff;
+    color: var(--Blanco-KS);
     border-radius: 4px;
     font-size: 14px;
     font-weight: 300;

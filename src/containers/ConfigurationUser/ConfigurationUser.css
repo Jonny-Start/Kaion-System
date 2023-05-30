@@ -1,11 +1,13 @@
 div#ConfigurationUser .recentOrders {
-    position: relative;
-    min-height: 530px;
-    background: #fff;
-    padding: 20px;
+    background-color: var(--Blanco-KS);
+    box-shadow: 1px 1px 20px #55286f2e;
+    border-radius: 5px;
+    padding: 1em;
+
+    margin-top: 3em;
 }
 
-div#ConfigurationUser .cardHeader {
+/* div#ConfigurationUser .cardHeader {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -19,21 +21,16 @@ div#ConfigurationUser .cardHeader {
 
 div#ConfigurationUser .cardHeader h2 {
     font-weight: 600;
-}
-
-div#ConfigurationUser .btn {
-    position: relative;
-    padding: 5px 10px;
-    background: #03a9f4;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 6px;
-}
+} */
 
 div#ConfigurationUser table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
+}
+
+div#ConfigurationUser table thead {
+    margin-bottom: 3em;
 }
 
 div#ConfigurationUser table thead td {
@@ -49,15 +46,26 @@ div#ConfigurationUser .recentOrders table tr:last-child {
 }
 
 div#ConfigurationUser .recentOrders table tbody tr:hover {
-    background: #03a9f4;
-    color: #fff;
+    background: var(--Azul-KS);
+    color: var(--Blanco-KS);
 }
 
 div#ConfigurationUser .recentOrders table tr td {
     padding: 9px 5px;
+
+    text-align: -webkit-center;
 }
 
-div#ConfigurationUser .recentOrders table thead tr td:last-child,
+div#ConfigurationUser .recentOrders table tr td i {
+    cursor: pointer;
+}
+
+div#ConfigurationUser .recentOrders table thead tr,
+div#ConfigurationUser .recentOrders table tbody tr {
+    text-align: center;
+}
+
+/* div#ConfigurationUser .recentOrders table thead tr td:last-child,
 div#ConfigurationUser .recentOrders table tbody tr td:last-child {
     text-align: right;
 }
@@ -71,33 +79,17 @@ div#ConfigurationUser .recentOrders table tbody tr td:nth-child(2) {
 div#ConfigurationUser .recentOrders table thead tr td:nth-child(3),
 div#ConfigurationUser .recentOrders table tbody tr td:nth-child(3) {
     text-align: center;
-}
+} */
 
 
 div#ConfigurationUser .status {
     position: relative;
     padding: 2px 4px;
-    color: #fff;
+    color: var(--Blanco-KS);
     border-radius: 4px;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 1px;
-}
-
-div#ConfigurationUser .delivered {
-    background: #8de02c;
-}
-
-div#ConfigurationUser .pending {
-    background: #f9ca3f;
-}
-
-div#ConfigurationUser .return {
-    background: #f00;
-}
-
-div#ConfigurationUser .inprogress {
-    background: #1795ce;
 }
 
 @media (max-width: 480px) {
@@ -112,4 +104,18 @@ div#ConfigurationUser .inprogress {
     div#ConfigurationUser .recentOrders table {
         width: 600px;
     }
+}
+
+div#ConfigurationUser table input {
+    font-size: 1em;
+    border-radius: 5px;
+
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #0000004f;
+    width: 50%;
+
+    display: block;
+    text-align: center;
+    margin-top: 0.5em;
 }

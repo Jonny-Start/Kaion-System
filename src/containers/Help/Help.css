@@ -1,0 +1,77 @@
+div#Help .accordion {
+    border: 1px solid #48424247;
+    border-radius: 4px;
+    margin-top: 4em;
+}
+
+div#Help .accordion-item {
+    border-bottom: 1px solid #48424247;
+}
+
+div#Help .accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--Blanco-KS);
+    transition: 0.5s;
+
+    color: var(--Morado-KS);
+}
+
+div#Help .accordion-header:hover {
+    background-color: var(--Azul-KS);
+}
+
+div#Help .accordion-header:hover h3 {
+    color: var(--Blanco-KS);
+}
+
+
+div#Help .accordion-icon {
+    width: 10px;
+    height: 10px;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    transform: rotate(-45deg);
+    transition: transform 0.3s;
+}
+
+div#Help .accordion-header:hover .accordion-icon {
+    color: var(--Blanco-KS);
+}
+
+div#Help .accordion-content {
+    /* padding: 10px; */
+    text-align: left;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+div#Help .accordion-content p {
+    color: var(--Azul-KS);
+}
+
+
+div#Help .accordion-item.active .accordion-content {
+    height: 60px;
+    padding: 10px;
+    /* Ajusta la altura máxima deseada */
+    transition: 0.5s ease;
+}
+
+div#Help .accordion-item.active .accordion-header {
+    background-color: var(--Azul-deg-KS);
+
+}
+
+div#Help .accordion-item.active .accordion-header h3 {
+    color: var(--Blanco-KS);
+}
+
+div#Help .accordion-item.active .accordion-header .accordion-icon {
+    transform: rotate(135deg);
+    color: var(--Blanco-KS);
+}

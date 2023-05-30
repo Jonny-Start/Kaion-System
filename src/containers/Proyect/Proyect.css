@@ -23,8 +23,8 @@ div#Proyect .cardHeader h2 {
 div#Proyect .btn {
     position: relative;
     padding: 5px 10px;
-    background: #03a9f4;
-    color: #fff;
+    background: var(--Azul-KS);
+    color: var(--Blanco-KS);
     text-decoration: none;
     border-radius: 6px;
 }
@@ -72,7 +72,7 @@ div#Proyect .recentOrders table tr:last-child {
 }
 
 div#Proyect .recentOrders table tbody tr:hover {
-    background-color: var(--Morado-deg-KS);
+    background-color: var(--Azul-KS);
     color: var(--Blanco-KS);
 }
 
