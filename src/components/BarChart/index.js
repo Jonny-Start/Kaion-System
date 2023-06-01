@@ -65,6 +65,14 @@ export default function BarsChart({ horizontalBar }) {
       title: {
         display: true,
         text: "Chart.js Bar Chart",
+        font: {
+          size: 20,
+        },
+        color: "red",
+        padding: {
+          top: 10,
+          bottom: 20,
+        },
       },
     },
     scales: {
