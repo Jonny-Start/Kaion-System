@@ -38,6 +38,8 @@ const meses = [
 ];
 
 const beneficios = [10, 56, 20, 36, 80, 40, 30, -20, 25, 30, 18, 60];
+const beneficios2 = [10, 32, 534, 534, 54, 40, 54, -20, 25, 30, 18, 60];
+
 
 const miData = {
   labels: meses,
@@ -47,6 +49,11 @@ const miData = {
       data: beneficios,
       backgroundColor: "rgba(0, 220, 195, 0.5)",
     },
+    {
+      label: "No Beneficios",
+      data: beneficios2,
+      backgroundColor: "blue",
+    }
   ],
 };
 
@@ -68,7 +75,7 @@ export default function BarsChart({ horizontalBar }) {
         font: {
           size: 20,
         },
-        color: "red",
+        color: "rgba(0, 220, 195)",
         padding: {
           top: 10,
           bottom: 20,
