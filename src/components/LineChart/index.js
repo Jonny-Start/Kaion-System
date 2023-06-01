@@ -22,63 +22,47 @@ ChartJS.register(
   Filler
 );
 
-const meses = [
-  "Enero",
-  "Febrero",
-  "Marzo",
-  "Abril",
-  "Mayo",
-  "Junio",
-  "Julio",
-  "Agosto",
-  "Septiebre",
-  "Octubre",
-  "Noviembre",
-  "Diciembre",
-];
-const beneficios = [0, 56, 20, 36, 80, 40, 30, -20, 25, 30, 12, 60];
+export default function LinesChart({ dataAllChart }) {
+  const miData = {
+    labels: dataAllChart.labelsChart,
+    datasets: [
+      //cadauna de las lineas del grafico
+      {
+        label: dataAllChart.labelChart,
+        data: dataAllChart.dataChart,
+        tension: 0.5,
+        fill: true,
+        borderColor: "rgb(255, 99, 132)",
+        backgroundColor: "rgba(255, 99, 132, 0.5)",
+        pointRadius: 5,
+        pointBorderColor: "rgba(255, 99, 132)",
+        pointBackgroundColor: "rgb(255, 99, 132)",
+      },
+    ],
+  };
 
-const miData = {
-  labels: meses,
-  datasets: [
-    //cadauna de las lineas del grafico
-    {
-      label: "Beneficios",
-      data: beneficios,
-      tension: 0.5,
-      fill: true,
-      borderColor: "rgb(255, 99, 132)",
-      backgroundColor: "rgba(255, 99, 132, 0.5)",
-      pointRadius: 5,
-      pointBorderColor: "rgba(255, 99, 132)",
-      pointBackgroundColor: "rgb(255, 99, 132)",
-    },
-  ],
-};
-
-const misOptions = {
-  scales: {
-    y: {
-      //   min: 0,
-    },
-    x: {
-      ticks: {
-        color: "pink",
+  const misOptions = {
+    scales: {
+      y: {
+        //   min: 0,
+      },
+      x: {
+        ticks: {
+          color: "pink",
+        },
       },
     },
-  },
-  plugins: {
-    legend: {
-      //   display: false,
+    plugins: {
+      legend: {
+        //   display: false,
+      },
+      title: {
+        display: true,
+        text: dataAllChart.titleChart,
+      },
     },
-    title: {
-      display: true,
-      text: "Chart.js Line Chart",
-    },
-  },
-};
+  };
 
-export default function LinesChart() {
   return <Line data={miData} options={misOptions} />;
 }
 

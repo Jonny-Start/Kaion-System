@@ -22,42 +22,39 @@ ChartJS.register(
   Filler
 );
 
-const meses = [
-  "Enero",
-  "Febrero",
-  "Marzo",
-  "Abril",
-  "Mayo",
-  "Junio",
-  "Julio",
-  "Agosto",
-  "Septiebre",
-  "Octubre",
-  "Noviembre",
-  "Diciembre",
-];
+export default function BarsChart({ dataAllChart, horizontalBar }) {
+  // const beneficios = [10, 56, 20, 36, 80, 40, 30, -20, 25, 30, 18, 60];
+  // const beneficios2 = [10, 32, 534, 534, 54, 40, 54, -20, 25, 30, 18, 60];
 
-const beneficios = [10, 56, 20, 36, 80, 40, 30, -20, 25, 30, 18, 60];
-const beneficios2 = [10, 32, 534, 534, 54, 40, 54, -20, 25, 30, 18, 60];
+  let dataSend = dataAllChart.dataChartSecond
+    ? {
+        labels: dataAllChart.labelsChart,
+        datasets: [
+          {
+            label: dataAllChart.labelChart,
+            data: dataAllChart.dataChart,
+            backgroundColor: "rgba(0, 220, 195, 0.5)",
+          },
+          {
+            label: dataAllChart.labelChartSecond,
+            data: dataAllChart.dataChartSecond,
+            backgroundColor: "rgba(0, 220, 195, 0.5)",
+          },
+        ],
+      }
+    : {
+        labels: dataAllChart.labelsChart,
+        datasets: [
+          {
+            label: dataAllChart.labelChart,
+            data: dataAllChart.dataChart,
+            backgroundColor: "rgba(0, 220, 195, 0.5)",
+          },
+        ],
+      };
 
+  const miData = dataSend;
 
-const miData = {
-  labels: meses,
-  datasets: [
-    {
-      label: "Beneficios",
-      data: beneficios,
-      backgroundColor: "rgba(0, 220, 195, 0.5)",
-    },
-    {
-      label: "No Beneficios",
-      data: beneficios2,
-      backgroundColor: "blue",
-    }
-  ],
-};
-
-export default function BarsChart({ horizontalBar }) {
   let directionBar = "x";
   horizontalBar && (directionBar = "y");
 
@@ -71,7 +68,7 @@ export default function BarsChart({ horizontalBar }) {
       },
       title: {
         display: true,
-        text: "Chart.js Bar Chart",
+        text: dataAllChart.titleChart,
         font: {
           size: 20,
         },
