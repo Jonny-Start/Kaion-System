@@ -104,3 +104,79 @@ section#login form {
     align-items: center;
     gap: 20px;
 }
+
+@media (max-width: 620px) {}
+
+@media (orientation: landscape) {
+
+    /* Estilos CSS para orientación paisaje, (más ancho que largo) */
+    section#login #contentFormLogin {
+
+        margin-top: 4em;
+    }
+
+    section#login div.imgBackground>div.colorGradient h2 {
+        margin-top: 0.5em;
+    }
+
+    section#login div.imgBackground>div.colorGradient p {
+        margin-top: -0.5em;
+
+    }
+}
+
+/* Estilos específicos para orientación retrato (más largo que ancho) */
+@media (orientation: portrait) {
+
+    /* Estilos CSS para orientación retrato */
+    section#login {
+        /* grid-template-rows: 1fr 1fr; */
+        grid-template-columns: none;
+    }
+
+    section#login #contentFormLogin {
+        margin-top: -2em;
+        grid-row: 2;
+        z-index: 3;
+    }
+
+    section#login img#iconoKaionSystem {
+        top: 53px;
+        z-index: 1;
+    }
+
+    section#login h1 {
+        margin-bottom: 2em;
+        margin-top: 0;
+    }
+
+    section#login form {
+        gap: 40px;
+    }
+
+    section#login div.imgBackground {
+        height: 22vh;
+        background-size: 95% auto;
+        grid-row: 1;
+    }
+
+    section#login div.imgBackground>div.colorGradient {
+        background-image: linear-gradient(to left bottom, rgb(31 72 126 / 69%) 49%, var(--Blanco-KS) 40%);
+
+    }
+
+    section#login div.imgBackground>div.colorGradient h2 {
+        width: 71%;
+        padding-left: 29%;
+        margin-top: 0.3em;
+        font-size: 2em;
+    }
+
+    section#login div.imgBackground>div.colorGradient h2>span {
+        margin-left: 81px;
+    }
+
+    section#login div.imgBackground>div.colorGradient p {
+        display: none;
+    }
+}

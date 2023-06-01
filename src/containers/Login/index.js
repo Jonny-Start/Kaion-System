@@ -59,7 +59,7 @@ function Login() {
         <form onSubmit={login}>
           <Input
             type="email"
-            textLabel="Correo electronico"
+            textLabel="Correo electrónico"
             icon="email"
             classInput="inputText"
             required={true}
