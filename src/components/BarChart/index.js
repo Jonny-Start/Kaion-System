@@ -62,6 +62,10 @@ export default function BarsChart({ horizontalBar }) {
       legend: {
         // display: false,
       },
+      title: {
+        display: true,
+        text: "Chart.js Bar Chart",
+      },
     },
     scales: {
       y: {

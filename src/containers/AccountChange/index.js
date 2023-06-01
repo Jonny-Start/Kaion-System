@@ -9,7 +9,7 @@ function AccountChange() {
       <div className="contentSearch">
         <input type="search" placeholder="Buscar" />
       </div>
-      <div className="container">
+      <div className="containerCards">
         <div className="card">
           <div className="imgBx">
             Jonny Alejandro Cano Acosta

@@ -1,4 +1,4 @@
-div#AccountChange .container {
+div#AccountChange .containerCards {
     position: relative;
     width: 100%;
     display: flex;
@@ -7,7 +7,7 @@ div#AccountChange .container {
     padding: 20px;
 }
 
-div#AccountChange .container .card {
+div#AccountChange .containerCards .card {
     position: relative;
     height: 250px;
     background: #fff;
@@ -18,7 +18,7 @@ div#AccountChange .container .card {
     border-radius: 20px;
 }
 
-div#AccountChange .container .card .imgBx {
+div#AccountChange .containerCards .card .imgBx {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -41,24 +41,24 @@ div#AccountChange .container .card .imgBx {
 
 }
 
-div#AccountChange .container .card:hover .imgBx {
+div#AccountChange .containerCards .card:hover .imgBx {
     height: 150px;
     width: 150px;
     left: -75px;
     top: calc(50% - 75px);
 }
 
-div#AccountChange .container .card .imgBx img {
+div#AccountChange .containerCards .card .imgBx img {
     max-width: 100px;
     /* filter: invert(1); */
     transition: 0.5s ease-in-out;
 }
 
-div#AccountChange .container .card:hover .imgBx img {
+div#AccountChange .containerCards .card:hover .imgBx img {
     max-width: 75px;
 }
 
-div#AccountChange .container .card .content {
+div#AccountChange .containerCards .card .content {
     position: absolute;
     right: 0;
     width: calc(100% - 100px);
@@ -69,27 +69,27 @@ div#AccountChange .container .card .content {
     align-items: center;
 }
 
-div#AccountChange .container .card .content>div {
+div#AccountChange .containerCards .card .content>div {
     padding-left: 1em;
 }
 
-div#AccountChange .container .card .content>div p {
+div#AccountChange .containerCards .card .content>div p {
     margin: 0;
     color: var(--Azul-KS);
 }
 
-div#AccountChange .container .card .content>div p span {
+div#AccountChange .containerCards .card .content>div p span {
     color: var(--Morado-deg-KS);
 }
 
-div#AccountChange .container .card .content h3 {
+div#AccountChange .containerCards .card .content h3 {
     color: var(--Morado-KS);
     margin-bottom: 5px;
     margin-top: 0;
     font-size: 24px;
 }
 
-div#AccountChange .container .card .content a {
+div#AccountChange .containerCards .card .content a {
     display: inline-block;
     margin-top: 10px;
     padding: 8px 20px;
@@ -121,14 +121,14 @@ div#AccountChange .contentSearch input:focus {
 }
 
 @media (max-width: 992px) {
-    div#AccountChange .container {
+    div#AccountChange .containerCards {
         position: relative;
         width: 100%;
         flex-direction: column;
         align-items: center;
     }
 
-    div#AccountChange .container .card {
+    div#AccountChange .containerCards .card {
         width: 300px;
         height: auto;
         flex-direction: column;
@@ -137,28 +137,28 @@ div#AccountChange .contentSearch input:focus {
         box-shadow: none;
     }
 
-    div#AccountChange .container .card .imgBx {
+    div#AccountChange .containerCards .card .imgBx {
         position: relative;
     }
 
-    div#AccountChange .container .card .imgBx,
-    div#AccountChange .container .card:hover .imgBx {
+    div#AccountChange .containerCards .card .imgBx,
+    div#AccountChange .containerCards .card:hover .imgBx {
         width: 80%;
         height: 200px;
         top: 100px;
         left: 23%;
     }
 
-    div#AccountChange .container .card:hover .imgBx {
+    div#AccountChange .containerCards .card:hover .imgBx {
         top: 80px;
     }
 
-    div#AccountChange .container .card .imgBx img,
-    div#AccountChange .container .card:hover .imgBx img {
+    div#AccountChange .containerCards .card .imgBx img,
+    div#AccountChange .containerCards .card:hover .imgBx img {
         max-width: 100px;
     }
 
-    div#AccountChange .container .card .content {
+    div#AccountChange .containerCards .card .content {
         position: relative;
         width: 100%;
         background: var(--Blanco-KS);

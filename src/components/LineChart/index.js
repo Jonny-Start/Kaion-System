@@ -59,7 +59,7 @@ const miData = {
 const misOptions = {
   scales: {
     y: {
-    //   min: 0,
+      //   min: 0,
     },
     x: {
       ticks: {
@@ -69,7 +69,11 @@ const misOptions = {
   },
   plugins: {
     legend: {
-    //   display: false,
+      //   display: false,
+    },
+    title: {
+      display: true,
+      text: "Chart.js Line Chart",
     },
   },
 };
