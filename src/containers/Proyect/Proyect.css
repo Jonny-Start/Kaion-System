@@ -51,14 +51,16 @@ div#Proyect table h3 {
 div#Proyect table input {
     font-size: 1em;
     border-radius: 5px;
-
     font-size: 1em;
     border-radius: 5px;
     border: 1px solid #0000004f;
     width: 50%;
-
+    height: 2em;
+    outline: none;
 }
-
+div#Proyect table input:active{
+    border: none;
+}
 div#Proyect table thead td {
     font-weight: 600;
 }
@@ -89,7 +91,7 @@ div#Proyect .recentOrders table tr td {
         overflow-x: auto;
     }
 
-    div#Proyect .recentOrders table {
+    /* div#Proyect .recentOrders table {
         width: 600px;
-    }
+    } */
 }

@@ -144,3 +144,78 @@ div#Home #contentTime .cardTime .sectionRight .secondary1 {
     width: 3em;
     margin-right: 1em;
 }
+
+@media (orientation: landscape) {
+    div#Home #sectionDateNow {
+        gap: 1em;
+        font-size: 1.2em;
+    }
+
+    div#Home #containerWeeks button {
+
+        font-size: 1em;
+    }
+
+    div#Home #contentTime .cardTime .sectionLeft {
+        width: 50%;
+    }
+    @media (max-width: 1103px) {
+        div#Home #contentTime .cardTime .sectionLeft {
+            width: 40%;
+        }
+    }
+}
+
+@media (orientation: portrait) {
+    @media (max-width: 874px) {
+        div#Home #contentTime .cardTime {
+            display: flex;
+            flex-direction: row;
+        }
+
+        div#Home #contentTime .cardTime .sectionLeft {
+            width: 25%;
+        }
+
+        div#Home #contentTime .cardTime .sectionRight {
+            width: 48%;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 0.8em;
+            align-content: center;
+        }
+    }
+
+    @media (max-width: 620px) {
+        div#Home #sectionDateNow {
+            gap: 1em;
+            font-size: 1.2em;
+        }
+
+        div#Home #containerWeeks button {
+
+            font-size: 1em;
+        }
+
+        div#Home #contentTime .cardTime {
+            margin-left: 5%;
+            margin-right: 5%;
+            justify-content: space-around;
+            align-items: stretch;
+            align-content: center;
+            flex-direction: row;
+            gap: 2em;
+        }
+
+        div#Home #contentTime .cardTime .sectionLeft {
+            text-align: justify;
+            width: auto;
+        }
+
+        div#Home #contentTime .cardTime .sectionRight {
+            width: 100%;
+            justify-content: space-evenly;
+        }
+    }
+}

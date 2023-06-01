@@ -7,7 +7,7 @@ function Task() {
     <BasicLayout idContent="Task">
       <div className="recentOrders">
         <div className="cardHeader">
-          <a  className="btn">
+          <a className="btn">
             Crear nuevo
           </a>
         </div>
@@ -15,9 +15,14 @@ function Task() {
           <table>
             <thead>
               <tr>
-                <td>Nombre de tarea</td>
-                <td>Proyecto asignado</td>
-                <td>facturable</td>
+                <td>
+                  <h3>Nombre de tarea</h3>
+                  <input type="search" placeholder="Buscar" />
+                </td>
+                <td>
+                  <h3> Proyecto asignado</h3>
+                </td>
+                <td><h3>Facturable</h3></td>
               </tr>
             </thead>
             <tbody>

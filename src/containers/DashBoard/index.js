@@ -11,62 +11,49 @@ import PiesChart from "../../components/PiesChart";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const dataFirtsPie = {
-  titleChart: "Lenguajes de programacion",
-  dataChart: [35, 20, 20, 15, 10],
-  labelChart: "Este es como el title de la primera grafica",
-  labelsChart: ["js", "Go", "Java", "TS", "REACT"],
+  titleChart: "Distribución del tiempo productivo diariamente",
+  dataChart: [22, 18, 35, 25],
+  labelChart: "Proporción del tiempo productivo dedicado",
+  // este gráfico se mide por las tareas asignadas cumplidas en el tiempo estimado o menos
+  labelsChart: ["Reunión diaria", "Aprendizaje", "Asignar tareas", "Crear proyectos"],
 };
 const dataSecondPie = {
-  titleChart: "Otra cosa que no se que",
-  dataChart: [123, 222, 320, 135, 50],
-  labelChart: "Este es como el title de la Segunda grafica",
-  labelsChart: ["Tiempo", "Proyecto", "Usuarios", "Empleados", "Proveedores"],
+  titleChart: "Distribución del tiempo productivo entre trabajo remoto y presencial",
+  dataChart: [123, 222],
+  labelChart: "Proporción del tiempo productivo en los diferentes ambientes de trabajo",
+  // este gráfico se mide por las tareas asignadas cumplidas en el tiempo estimado o menos en las dos modalidades de trabajo
+  labelsChart: ["Tiempo en trabajo presencial", "Tiempo en trabajo remoto"],
 };
 
 const dataFirstBar = {
-  titleChart: "Meses del año durante el año",
-  dataChart: [10, 56, 20, 36, 80, 40, 30, -20, 25, 30, 18, 60],
-  labelChart: "Los meses del año",
+  titleChart: "Comparativa de tiempos al cumplir una tarea medido en horas",
+  dataChart: [10, 56, 20, 36, 80, 40, 30, 25, 30, 18, 60],
+  labelChart: "Tiempo asignado en la tarea",
   labelsChart: [
-    "Enero",
-    "Febrero",
-    "Marzo",
-    "Abril",
-    "Mayo",
-    "Junio",
-    "Julio",
-    "Agosto",
-    "Septiebre",
-    "Octubre",
-    "Noviembre",
-    "Diciembre",
+    "Diseñar vistas KS",
+    "Resolver la guía 1",
+    "Crear presentación",
   ],
+  dataChartSecond: [20, 43, 10, 60, 40, 80, 60, 20, 45, 60, 28, 30],
+  labelChartSecond: "Tiempo obtenido en la tarea ",
 };
 
 const dataSecondBar = {
-  titleChart: "Nuevo Arreglo de datos",
+  titleChart: "Comparativa de tiempos medido en horas facturables y no facturables",
   dataChart: [234, 564, 232, 432, 534, 423, 234, 465, 465, 687, 978, 564],
-  labelChart: "Datos que puse por que si",
+  labelChart: "Medido por tareas asignadas cumplidas en el tiempo estimado o menos ",
   labelsChart: [
-    "El primero",
-    "El segundo ",
-    "tercero",
-    "Cuarto",
-    "QUinto",
-    "Sexto",
-    "Septimo",
-    "Octavo",
-    "NOveno",
-    "Decimo",
-    "Onceavo",
-    "Doceavo",
+    "Horas facturables",
+    "Horas no facturables",
   ],
 };
 
 const dataFusionBar = {
-  titleChart: "Meses del año Nombre",
+  titleChart: "Comparativa de tiempo productivo por mes",
+  // esta grafica mide la comparacion de tiempos productivo entre meses medido en 
+  // las tareas asignadas cumplidas en el tiempo estimado o menos
   dataChart: [10, 56, 20, 36, 80, 40, 30, -20, 25, 30, 18, 60],
-  labelChart: "Los meses del año nombre",
+  labelChart: "Tiempo productivo medido en las tareas cumplidas en el tiempo estimado",
   labelsChart: [
     "Enero",
     "Febrero",
@@ -82,14 +69,15 @@ const dataFusionBar = {
     "Diciembre",
   ],
 
-  dataChartSecond: [20, 43, 10, 60, 40, 80, 60, 20, 45, 60, 28, 30],
-  labelChartSecond: "Los meses del año numero",
+  // dataChartSecond: [20, 43, 10, 60, 40, 80, 60, 20, 45, 60, 28, 30],
+  // labelChartSecond: "Semestre",
 };
 
 const dataFirstLine = {
-  titleChart: "Meses del año durante el año",
-  dataChart: [10, 56, 20, 36, 80, 40, 30, -20, 25, 30, 18, 60],
-  labelChart: "Los meses del año",
+  titleChart: "Evolución de tiempo productivo en meses",
+  dataChart: [10, 56, 20, 36, 80, 40, 30, 25, 30, 18, 60],
+  // este grafico mide la evolucion de la productividad en meses medido en las tareas asignadas cumplidas en el tiempo estimado o menos
+  labelChart: "Horas productivas al cumplir tareas en las horas asignadas",
   labelsChart: [
     "Enero",
     "Febrero",

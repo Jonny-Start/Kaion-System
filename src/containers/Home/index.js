@@ -41,15 +41,15 @@ function Home() {
             <Button
               typeStyleButton="primary"
               textButton="Iniciar"
-              typeButton="button"
-            />
-            <Button typeStyleButton="secondary1" typeButton="button">
-              <i className="fa-solid fa-pen"></i>
-            </Button>
-          </div>
+              typeButton="button">
+          </Button>
+          <Button typeStyleButton="secondary1" typeButton="button">
+            <i className="fa-solid fa-pen"></i>
+          </Button>
         </div>
-      </section>
-    </BasicLayout>
+      </div>
+    </section>
+    </BasicLayout >
   );
 }
 
