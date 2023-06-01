@@ -43,7 +43,7 @@ function Input({
   return (
     <div className="contentInput">
       <input
-      autoComplete="false"
+      autoComplete="off"
         type={type}
         value={value}
         ref={refVal}
