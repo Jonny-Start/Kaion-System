@@ -76,31 +76,15 @@ function LandingPage() {
               <div className="feature">
                 <i className="fa-solid fa-stopwatch"></i>
                 <span className="descriptionFeature">
-                  <h4 id="titleCard"> Conteo de horas</h4>
-                  <p id="descriptionCard">{"Tengo muchas hooooras "}</p>
+                  <h4 id="titleCard"> Monitoreo integral del tiempo productivo</h4>
+                  <p id="descriptionCard">Obtén una visión completa del tiempo dedicado a diferentes actividades, proyectos y tareas, en diferentes entornos de trabajo.</p>
                 </span>
               </div>
               <div className="feature">
                 <i className="fa-solid fa-stopwatch"></i>
                 <span className="descriptionFeature">
-                  <h4 id="titleCard"> Conteo de horas</h4>
-                  <p id="descriptionCard">{"Tengo muchas hooooras "}</p>
-                </span>
-              </div>
-            </div>
-            <div className="contentFeatures">
-              <div className="feature">
-                <i className="fa-solid fa-stopwatch"></i>
-                <span className="descriptionFeature">
-                  <h4 id="titleCard"> Conteo de horas</h4>
-                  <p id="descriptionCard">{"Tengo muchas hooooras "}</p>
-                </span>
-              </div>
-              <div className="feature">
-                <i className="fa-solid fa-stopwatch"></i>
-                <span className="descriptionFeature">
-                  <h4 id="titleCard"> Conteo de horas</h4>
-                  <p id="descriptionCard">{"Tengo muchas hooooras "}</p>
+                  <h4 id="titleCard">Análisis en tiempo real</h4>
+                  <p id="descriptionCard">Accede a análisis y estadísticas en tiempo real para evaluar y optimizar la productividad individual de tus equipos de trabajo.</p>
                 </span>
               </div>
             </div>
@@ -108,15 +92,31 @@ function LandingPage() {
               <div className="feature">
                 <i className="fa-solid fa-stopwatch"></i>
                 <span className="descriptionFeature">
-                  <h4 id="titleCard"> Conteo de horas</h4>
-                  <p id="descriptionCard">{"Tengo muchas hooooras "}</p>
+                  <h4 id="titleCard">Visualización intuitiva</h4>
+                  <p id="descriptionCard">Utiliza gráficos claros y concisos para representar visualmente la distribución del tiempo productivo, permitiendo una fácil comprensión y toma de decisiones informadas.</p>
                 </span>
               </div>
               <div className="feature">
                 <i className="fa-solid fa-stopwatch"></i>
                 <span className="descriptionFeature">
-                  <h4 id="titleCard"> Conteo de horas</h4>
-                  <p id="descriptionCard">{"Tengo muchas hooooras "}</p>
+                  <h4 id="titleCard"> Acceso multiplataforma</h4>
+                  <p id="descriptionCard">Disfruta de la flexibilidad de acceder a la aplicación desde dispositivos</p>
+                </span>
+              </div>
+            </div>
+            <div className="contentFeatures">
+              <div className="feature">
+                <i className="fa-solid fa-stopwatch"></i>
+                <span className="descriptionFeature">
+                  <h4 id="titleCard"> Integraciones flexibles</h4>
+                  <p id="descriptionCard">Conecta con otras herramientas y aplicaciones populares para importar datos y lograr una experiencia de seguimiento del tiempo más completa y automatizada.</p>
+                </span>
+              </div>
+              <div className="feature">
+                <i className="fa-solid fa-stopwatch"></i>
+                <span className="descriptionFeature">
+                  <h4 id="titleCard"> Seguridad y privacidad</h4>
+                  <p id="descriptionCard">Garantiza la seguridad de los datos y la privacidad de los usuarios mediante protocolos de seguridad robustos y prácticas de privacidad sólidas.</p>
                 </span>
               </div>
             </div>

@@ -33,12 +33,12 @@ export default function BarsChart({ dataAllChart, horizontalBar }) {
           {
             label: dataAllChart.labelChart,
             data: dataAllChart.dataChart,
-            backgroundColor: "rgba(0, 220, 195, 0.5)",
+            backgroundColor: "rgba(250, 199, 55)",
           },
           {
             label: dataAllChart.labelChartSecond,
             data: dataAllChart.dataChartSecond,
-            backgroundColor: "rgba(0, 220, 195, 0.5)",
+            backgroundColor: "rgba(233, 100, 67)",
           },
         ],
       }
@@ -48,7 +48,7 @@ export default function BarsChart({ dataAllChart, horizontalBar }) {
           {
             label: dataAllChart.labelChart,
             data: dataAllChart.dataChart,
-            backgroundColor: "rgba(0, 220, 195, 0.5)",
+            backgroundColor: "#4BB34A",
           },
         ],
       };
@@ -72,9 +72,9 @@ export default function BarsChart({ dataAllChart, horizontalBar }) {
         font: {
           size: 20,
         },
-        color: "rgba(0, 220, 195)",
+        color: "black",
         padding: {
-          top: 10,
+          top: 19,
           bottom: 20,
         },
       },
@@ -84,12 +84,12 @@ export default function BarsChart({ dataAllChart, horizontalBar }) {
         // min: -25,
         // max: 100,
         ticks: {
-          color: "rgba(0, 220, 195)",
+          color: "black",
         },
       },
       x: {
         ticks: {
-          color: "rgba(0, 220, 195)",
+          color: "black",
         },
       },
     },

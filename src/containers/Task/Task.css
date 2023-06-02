@@ -49,6 +49,25 @@ div#Task table thead td {
     font-weight: 600;
 }
 
+div#Task table thead h3 {
+    margin-top: 0;
+    color: var(--Morado-KS);
+}
+
+div#Task table input {
+    font-size: 1em;
+    border-radius: 5px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #0000004f;
+    width: 50%;
+    height: 2em;
+    outline: none;
+}
+div#Task table input:active{
+    border: none;
+}
+
 div#Task .recentOrders table tr {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -91,6 +110,7 @@ div#Task .status {
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 1px;
+    white-space: nowrap;
 }
 
 div#Task .billableTrue {
@@ -118,7 +138,7 @@ div#Task .billableFalse {
         overflow-x: auto;
     }
 
-    div#Task .recentOrders table {
+    /* div#Task .recentOrders table {
         width: 600px;
-    }
+    } */
 }

@@ -33,7 +33,7 @@ export default function LinesChart({ dataAllChart }) {
         tension: 0.5,
         fill: true,
         borderColor: "rgb(255, 99, 132)",
-        backgroundColor: "rgba(255, 99, 132, 0.5)",
+        backgroundColor: "transparent",
         pointRadius: 5,
         pointBorderColor: "rgba(255, 99, 132)",
         pointBackgroundColor: "rgb(255, 99, 132)",
@@ -48,7 +48,7 @@ export default function LinesChart({ dataAllChart }) {
       },
       x: {
         ticks: {
-          color: "pink",
+          color: "black",
         },
       },
     },
@@ -59,6 +59,14 @@ export default function LinesChart({ dataAllChart }) {
       title: {
         display: true,
         text: dataAllChart.titleChart,
+        font: {
+          size: 20,
+        },
+        color: "black",
+        padding: {
+          top: 19,
+          bottom: 20,
+        },
       },
     },
   };
