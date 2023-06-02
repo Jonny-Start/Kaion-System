@@ -1,7 +1,8 @@
 import React from "react";
 
 function Notification() {
-  switch ("type") {
+  const type = 'error'
+  switch (type) {
     case "error":
       return (
         <div className="alert danger-alert">

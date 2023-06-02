@@ -146,8 +146,10 @@ div#LandingPage h2#subtitleFeature {
 
 div#LandingPage div#contentCardsFeatures {
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    gap: 1em;
+    align-items: stretch;
+    padding: 1em;
 }
 
 /* div#LandingPage div.contentFeatures {
@@ -160,7 +162,7 @@ div#LandingPage div.feature {
     align-items: center;
     background-color: #55286f1c;
     border-radius: 11px;
-    height: auto;
+    height: 11em;
     margin-bottom: 1em;
     padding: 1em;
 }
@@ -176,7 +178,7 @@ div#LandingPage div.feature i {
 
 div#LandingPage span.descriptionFeature {
     text-align: left;
-    word-break: break-all;
+    word-break: break-word;
     padding: 0.5em;
 }
 
