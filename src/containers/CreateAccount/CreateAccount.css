@@ -226,7 +226,7 @@ section#CreateAccount .singInLink {
         }
 
         section#CreateAccount div#CreateAccountGradient {
-            width: 44em;
+            /*width: 44em;*/
         }
 
         section#CreateAccount div.cardForm {
@@ -246,7 +246,7 @@ section#CreateAccount .singInLink {
 
     section#CreateAccount div#CreateAccountBackground {
         height: 22vh;
-        background-size: 99% auto;
+        background-size: 99%;
     }
 
     section#CreateAccount div#CreateAccountGradient {

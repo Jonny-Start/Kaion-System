@@ -61,6 +61,7 @@ div#LandingPage div#contentHeader span#contentButton button.secondary3 {
     font-weight: 600;
     width: 110px;
     height: 30px;
+    padding-top: 0.5em;
 }
 
 /* --Negro-KS: #020101;
@@ -212,13 +213,16 @@ div#LandingPage div#contentCardsPlans {
 }
 
 div#LandingPage div.contentCardPrice {
-    width: 30%;
-    height: 18em;
+    width: 26%;
+    height: auto;
     border-radius: 23px;
     border: 2px solid var(--Morado-KS);
     padding-bottom: 1em;
     padding-top: 1em;
     margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 div#LandingPage div.contentCardPrice:hover {
@@ -273,12 +277,12 @@ div#LandingPage div.contentDescriptionCard {
 }
 
 div#LandingPage div.contentDescriptionCard h2.h2Description {
-    font-size: 15px;
-
+    font-size: 18px;
 }
 
 div#LandingPage span.descriptionPlan {
-    text-align: justify;
+    text-align: left;
+    font-weight: 500;
 }
 
 div#LandingPage span.descriptionPlan i {
@@ -291,9 +295,11 @@ div#LandingPage div.contentButton {
 
 div#LandingPage div.contentButton button.secondary1 {
     width: 88%;
-    height: 50%;
+    height: auto;
     font-weight: 600;
+    font-size: 15px;
     margin-top: 1em;
+    padding: 13px;
 }
 
 div#LandingPage div#contentFooter {
