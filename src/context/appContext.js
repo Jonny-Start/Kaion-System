@@ -4,14 +4,14 @@ const AppContext = React.createContext();
 
 function AppProvider({ children }) {
   const [loading, setLoading] = React.useState(false);
-  const [error, setError] = React.useState([]);
-  const [success, setSuccess] = React.useState([]);
+  const [error, setError] = React.useState(false);
+  const [success, setSuccess] = React.useState(false);
 
   const useError = (props) => setError(...error, [props]);
 
   const useSuccess = (props) => setSuccess(...success, [props]);
 
-  const auth = {
+  const context = {
     loading,
     error,
     success,
@@ -22,12 +22,12 @@ function AppProvider({ children }) {
     useSuccess,
   };
 
-  return <AppContext.Provider value={auth}>{children}</AppContext.Provider>;
+  return <AppContext.Provider value={context}>{children}</AppContext.Provider>;
 }
 
-function useApp() {
-  const auth = React.useContext(AppContext);
-  return auth;
+function useAppContext() {
+  const context = React.useContext(AppContext);
+  return context;
 }
 
-export { AppProvider, useApp };
+export { AppProvider, useAppContext };

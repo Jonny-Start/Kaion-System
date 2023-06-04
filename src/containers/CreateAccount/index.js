@@ -2,7 +2,7 @@ import React from "react";
 import "./CreateAccount.css";
 import imgIcono from "./../../icono.png";
 // import imgBackground from "./../../background.jpg";
-import imgBackground2 from "./../../background2.jpg";
+//import imgBackground2 from "./../../background2.jpg";
 import { Button, Input } from "../../components/forms";
 import { Link } from "react-router-dom";
 
