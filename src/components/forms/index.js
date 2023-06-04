@@ -12,6 +12,7 @@ function Input({
   refVal,
   onChangeinput,
   onChangeType,
+  errorInput
 }) {
   let iconInput;
   switch (icon) {
@@ -38,7 +39,6 @@ function Input({
     onChangeType();
     setShowPasword((prevState) => !prevState);
   };
-  const errorInput = false;
 
   return (
     <div className="contentInput">
@@ -87,6 +87,7 @@ function Button({
   typeButton,
   onAction,
   children,
+  disabledButton
 }) {
   switch (typeStyleButton) {
     case "primary":
@@ -95,6 +96,7 @@ function Button({
           className="buttonPrimary"
           type={typeButton ? typeButton : "button"}
           onClick={onAction ? () => onAction() : undefined}
+          disabled={disabledButton}
         >
           {!textButton && !children && "Text undefined"}
           {textButton && textButton}

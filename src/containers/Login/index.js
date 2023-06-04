@@ -4,6 +4,7 @@ import imgIcono from "./../../icono.png";
 import { Button, Input } from "../../components/forms";
 import { Navigate, Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/auth";
+import { useAppContext } from "../../context/appContext";
 
 function Login() {
   const [email, setEmail] = React.useState("");
@@ -12,6 +13,11 @@ function Login() {
   const passwordInput = React.useRef(null);
 
   const auth = useAuth();
+
+  const context = useAppContext();
+
+  const ERROR = context.error;
+  const LOADING = context.loading;
 
   const navigate = useNavigate();
 
@@ -56,6 +62,7 @@ function Login() {
 
       <section id="contentFormLogin">
         <h1>Ingresa a tu cuenta</h1>
+        {ERROR && <p style={{color: 'red', marginBottom: '2em'}}> {ERROR}</p>}
         <form onSubmit={login}>
           <Input
             type="email"
@@ -66,6 +73,7 @@ function Login() {
             refVal={emailInput}
             onChangeinput={() => handleUser()}
             value={email}
+            errorInput={ERROR}
           />
           <Input
             type="password"
@@ -78,11 +86,13 @@ function Login() {
             onChangeinput={() => handlePassword()}
             value={password}
             onChangeType={() => onChangeTypeInput()}
+            errorInput={ERROR}
           />
           <Button
             typeStyleButton="primary"
             textButton="Iniciar sesión"
             typeButton="submit"
+            disabledButton={LOADING}
           />
         </form>
         <p className="contentLink">
