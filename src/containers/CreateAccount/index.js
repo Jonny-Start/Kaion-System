@@ -2,9 +2,11 @@ import React from "react";
 import "./CreateAccount.css";
 import imgIcono from "./../../icono.png";
 // import imgBackground from "./../../background.jpg";
-//import imgBackground2 from "./../../background2.jpg";
+// import imgBackground2 from "./../../background2.jpg";
 import { Button, Input } from "../../components/forms";
 import { Link } from "react-router-dom";
+
+import { useCreateAccount } from "../../services";
 
 function CreateAccount() {
   const [fullName, setFullName] = React.useState("");
@@ -27,8 +29,20 @@ function CreateAccount() {
   const delegateCompanySelect = React.useRef(null);
   const nameCompanyInput = React.useRef(null);
 
-  const useCreateAccount = (e) => {
+  const HandleCreateAccount = (e) => {
     e.preventDefault();
+    const allData = {
+      fullName: fullName,
+      nickname: nickname,
+      prefixNumber: prefixNumber,
+      phoneNumber: phoneNumber,
+      email: email,
+      password: password,
+      confirmPassword: confirmPassword,
+      delegateCompany: delegateCompany,
+      nameCompany: nameCompany,
+    };
+    useCreateAccount(allData);
     // auth.ProcessLogin({ email, password });
   };
 
@@ -53,46 +67,46 @@ function CreateAccount() {
   return (
     <section id="CreateAccount">
       <div id="CreateAccountBackground">
-        <div id="CreateAccountGradient" >
+        <div id="CreateAccountGradient">
           <div id="iconoKaionSystem">
             <img src={imgIcono} alt="icono Kaion-System" />
-           <p>Kaion-System </p> 
+            <p>Kaion-System </p>
           </div>
           <div className="contentDescription">
-        <h2>¿Por qué Kaion-System?</h2>
-        <article>
-
-          <h3>
-            <i className="fa-solid fa-check"></i>
-            Work with your data as code</h3>
-          <p>
-            Documents in MongoDB map directly to objects in your programming
-            language. Modify your schema as your apps grow over time.
-          </p>
-        </article>
-        <article>
-
-          <h3>
-            <i className="fa-solid fa-check"></i>
-            Focus on building, not managing</h3>
-          <p>
-            Let MongoDB Atlas take care of the infrastructure operations you
-            need for performance at scale, from always-on security to
-            point-in-time recovery.
-          </p>
-        </article>
-        <article>
-
-          <h3>
-            <i className="fa-solid fa-check"></i>
-            Simplify your data dependencies</h3>
-          <p>
-            Leverage application data for full-text search, real-time analytics,
-            rich visualizations and more with a single API and minimal data
-            movement.
-          </p>
-        </article>
-      </div>
+            <h2>¿Por qué Kaion-System?</h2>
+            <article>
+              <h3>
+                <i className="fa-solid fa-check"></i>
+                Work with your data as code
+              </h3>
+              <p>
+                Documents in MongoDB map directly to objects in your programming
+                language. Modify your schema as your apps grow over time.
+              </p>
+            </article>
+            <article>
+              <h3>
+                <i className="fa-solid fa-check"></i>
+                Focus on building, not managing
+              </h3>
+              <p>
+                Let MongoDB Atlas take care of the infrastructure operations you
+                need for performance at scale, from always-on security to
+                point-in-time recovery.
+              </p>
+            </article>
+            <article>
+              <h3>
+                <i className="fa-solid fa-check"></i>
+                Simplify your data dependencies
+              </h3>
+              <p>
+                Leverage application data for full-text search, real-time
+                analytics, rich visualizations and more with a single API and
+                minimal data movement.
+              </p>
+            </article>
+          </div>
         </div>
       </div>
       <div className="cardForm">
@@ -101,7 +115,7 @@ function CreateAccount() {
           Empieza a registrar tus horas de trabajo y sacale el mayor provecho a
           cada minuto
         </p>
-        <form onSubmit={useCreateAccount}>
+        <form onSubmit={HandleCreateAccount}>
           <Input
             type="text"
             textLabel="Nombre completo"
@@ -231,15 +245,14 @@ function CreateAccount() {
             Google
           </button>
         </form>
-        <p>¿Ya tienes cuenta? Ingresa &nbsp;
+        <p>
+          ¿Ya tienes cuenta? Ingresa &nbsp;
           <Link className="singInLink" to={`/login`}>
             aquí
           </Link>
         </p>
       </div>
-
     </section>
-
   );
 }
 
