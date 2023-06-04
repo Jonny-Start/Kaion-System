@@ -1,9 +1,19 @@
 import React from "react";
 import axios from "axios";
+import { useAuth } from "../context/auth";
+import { useAppContext } from "../context/appContext";
+import { useNavigate } from "react-router-dom";
 
 const baseURL = "http://localhost:4000/v1/api";
 
 function useCreateAccount({ allData }) {
+  const context = useAppContext();
+  context.setLoading(true);
+
+  const auth = useAuth();
+
+  const navigate = useNavigate();
+
   const nickname = allData.nickname;
   const phoneNumber = allData.phoneNumber;
   const prefixNumber = allData.prefixNumber;
@@ -33,16 +43,34 @@ function useCreateAccount({ allData }) {
       delegateCompany: delegateCompany,
     })
     .then((response) => {
-      if (response.status !== 200) return console.error(response);
-      if (response.data.error) return console.log(response.data.error);
+      context.setLoading(false);
+      if (response.status !== 200) {
+        context.setError(response);
+        return console.error(response);
+      }
+      if (response.data.error) {
+        context.setError(response.data.error);
+        return console.log(response.data.error);
+      }
       console.log(response.data);
-    //   setUser({
-    //     _id: response.data.data._id,
-    //     token: response.data.token,
-    //     role: response.data.data.role,
-    //   });
-    //   localStorage.setItem("user", JSON.stringify(user));
-    //   navigate("/home");
+
+      let storage = {
+        _id: response.data.data._id,
+        dataView: response.data.data._id,
+        changedView: false,
+        token: response.data.token,
+        apodo: response.data.data.nickname,
+        role: response.data.data.role,
+      };
+      auth.setUser(storage);
+
+      localStorage.setItem("user", JSON.stringify(storage));
+      context.setError(false);
+      navigate("/home");
+    })
+    .catch((error) => {
+      context.setLoading(false);
+      console.log("Un error al crear cuenta: ".error);
     });
 }
 

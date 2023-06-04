@@ -22,7 +22,7 @@ function AuthProvider({ children }) {
 
   const ProcessLogin = ({ email, password }) => {
     context.setLoading(true);
-    console.log(email, password);
+    // console.log(email, password);
 
     axios.post(`${baseURL}/login`, { email, password }).then((response) => {
       context.setLoading(false)

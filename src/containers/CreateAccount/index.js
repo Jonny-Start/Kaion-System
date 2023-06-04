@@ -43,7 +43,6 @@ function CreateAccount() {
       nameCompany: nameCompany,
     };
     useCreateAccount(allData);
-    // auth.ProcessLogin({ email, password });
   };
 
   const handleData = (updateState, refInput) => {
