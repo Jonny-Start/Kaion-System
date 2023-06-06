@@ -5,8 +5,7 @@ import imgIcono from "./../../icono.png";
 // import imgBackground2 from "./../../background2.jpg";
 import { Button, Input } from "../../components/forms";
 import { Link } from "react-router-dom";
-
-import { useCreateAccount } from "../../services";
+import { useAppContext } from '../../context/appContext'
 
 function CreateAccount() {
   const [fullName, setFullName] = React.useState("");
@@ -29,7 +28,10 @@ function CreateAccount() {
   const delegateCompanySelect = React.useRef(null);
   const nameCompanyInput = React.useRef(null);
 
-  const HandleCreateAccount = (e) => {
+  const context = useAppContext();
+
+
+  const useHandleCreateAccount = (e) => {
     e.preventDefault();
     const allData = {
       fullName: fullName,
@@ -42,7 +44,7 @@ function CreateAccount() {
       delegateCompany: delegateCompany,
       nameCompany: nameCompany,
     };
-    useCreateAccount(allData);
+    context.useCreateAccount(allData);
   };
 
   const handleData = (updateState, refInput) => {
@@ -114,7 +116,7 @@ function CreateAccount() {
           Empieza a registrar tus horas de trabajo y sacale el mayor provecho a
           cada minuto
         </p>
-        <form onSubmit={HandleCreateAccount}>
+        <form onSubmit={useHandleCreateAccount}>
           <Input
             type="text"
             textLabel="Nombre completo"
