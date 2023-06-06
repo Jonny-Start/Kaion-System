@@ -77,7 +77,7 @@ function LandingPage() {
           <div id="contentCardsFeatures">
             <div className="contentFeatures">
               <div className="feature">
-                <i class="fa-solid fa-clock"></i>
+                <i className="fa-solid fa-clock"></i>
                 <span className="descriptionFeature">
                   <h4 id="titleCard">
                     {" "}
