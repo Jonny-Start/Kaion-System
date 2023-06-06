@@ -10,7 +10,7 @@ function Home() {
         <button>
           <i className="fa-solid fa-chevron-left"></i>
         </button>
-        <p>Miercoles, 26 de Abril</p>
+        <p>Martes, 06 de Junio</p>
         <button>
           <i className="fa-solid fa-chevron-right"></i>
         </button>
@@ -18,8 +18,8 @@ function Home() {
       <div id="containerWeeks">
         <button>Dom</button>
         <button>Lun</button>
-        <button>Mar</button>
-        <button className="active">Mié</button>
+        <button className="active">Mar</button>
+        <button>Mié</button>
         <button>Jue</button>
         <button>Vie</button>
         <button>Sáb</button>
@@ -41,15 +41,15 @@ function Home() {
             <Button
               typeStyleButton="primary"
               textButton="Iniciar"
-              typeButton="button">
-          </Button>
-          <Button typeStyleButton="secondary1" typeButton="button">
-            <i className="fa-solid fa-pen"></i>
-          </Button>
+              typeButton="button"
+            ></Button>
+            <Button typeStyleButton="secondary1" typeButton="button">
+              <i className="fa-solid fa-pen"></i>
+            </Button>
+          </div>
         </div>
-      </div>
-    </section>
-    </BasicLayout >
+      </section>
+    </BasicLayout>
   );
 }
 

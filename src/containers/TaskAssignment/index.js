@@ -14,7 +14,7 @@ function TaskAssignment() {
               <select required>
                 <option value="">Usuario</option>
                 <option value="id">Jonny Alejandro Cano Acosta</option>
-                <option value="id">KAren Juliana Gomez Mattos</option>
+                <option value="id">Karen Juliana Gomez Mattos</option>
               </select>
               <Input
                 type="text"
@@ -27,8 +27,10 @@ function TaskAssignment() {
               <select required>
                 <option value="">Proyecto</option>
                 <option value="id">VyVy</option>
-                <option value="id">Merck</option>
-                <option value="id">Hp-medical</option>
+                <option value="id">Juntos App</option>
+                <option value="id">MS-Lifer</option>
+                <option value="id">SAAS</option>
+                <option value="id">Forecast</option>
               </select>
               <select required>
                 <option value="">Tarea</option>
@@ -68,7 +70,7 @@ function TaskAssignment() {
         <button>
           <i className="fa-solid fa-chevron-left"></i>
         </button>
-        <p>Miercoles, 26 de Abril</p>
+        <p>Martes, 06 de Junio</p>
         <button>
           <i className="fa-solid fa-chevron-right"></i>
         </button>
@@ -84,7 +86,7 @@ function TaskAssignment() {
           </div>
           <div className="sectionRight">
             <div className="timerAndEstimate">
-              <span className="viewTime">00:00</span>
+              <span className="viewTime">03:00</span>
             </div>
             <Button typeStyleButton="secondary1" typeButton="button">
               <i className="fa-solid fa-pen"></i>

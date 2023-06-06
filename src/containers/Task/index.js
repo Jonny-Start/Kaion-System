@@ -7,9 +7,7 @@ function Task() {
     <BasicLayout idContent="Task">
       <div className="recentOrders">
         <div className="cardHeader">
-          <a className="btn">
-            Crear nuevo
-          </a>
+          <a className="btn">Crear nuevo</a>
         </div>
         <div className="cardTable">
           <table>
@@ -22,71 +20,73 @@ function Task() {
                 <td>
                   <h3> Proyecto asignado</h3>
                 </td>
-                <td><h3>Facturable</h3></td>
+                <td>
+                  <h3>Facturable</h3>
+                </td>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Star Refrigerator</td>
-                <td>Paid</td>
+                <td>Esfuerzo discrecional</td>
+                <td>VyVy</td>
                 <td>
                   <span className="status billableTrue">Facturable</span>
                 </td>
               </tr>
               <tr>
-                <td>Window Coolers</td>
-                <td>Due</td>
+                <td>Esfuerzo evolutivo</td>
+                <td>Juntos App</td>
                 <td>
                   <span className="status billableTrue">Facturable</span>
                 </td>
               </tr>
               <tr>
-                <td>Speakers</td>
-                <td>Paid</td>
+                <td>Bolsa de horas 8H</td>
+                <td>Juntos App</td>
                 <td>
                   <span className="status billableTrue">Facturable</span>
                 </td>
               </tr>
               <tr>
-                <td>Hp Laptop</td>
-                <td>Due</td>
+                <td>Auto-estudio</td>
+                <td>MS-Lifer</td>
                 <td>
                   <span className="status billableFalse">No facturable</span>
                 </td>
               </tr>
               <tr>
-                <td>Star Refrigerator</td>
-                <td>Paid</td>
+                <td>Programming</td>
+                <td>MS-Lifer</td>
                 <td>
                   <span className="status billableTrue">Facturable</span>
                 </td>
               </tr>
               <tr>
-                <td>Window Coolers</td>
-                <td>Due</td>
+                <td>Soporte y mantenimineto</td>
+                <td>MS-Lifer</td>
+                <td>
+                  <span className="status billableTrue">Facturable</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Inducción</td>
+                <td>MS-Lifer</td>
                 <td>
                   <span className="status billableFalse">No facturable</span>
                 </td>
               </tr>
               <tr>
-                <td>Speakers</td>
-                <td>Paid</td>
+                <td>Servicio base</td>
+                <td>SAAS</td>
                 <td>
                   <span className="status billableTrue">Facturable</span>
                 </td>
               </tr>
               <tr>
-                <td>Hp Laptop</td>
-                <td>Due</td>
+                <td>Programming</td>
+                <td>Forecast</td>
                 <td>
                   <span className="status billableTrue">Facturable</span>
-                </td>
-              </tr>
-              <tr>
-                <td>Apple Watch</td>
-                <td>Paid</td>
-                <td>
-                  <span className="status billableFalse">No facturable</span>
                 </td>
               </tr>
             </tbody>
