@@ -177,6 +177,7 @@ section#CreateAccount .contentTerms {
 
 section#CreateAccount .contentTerms input[type=checkbox] {
     margin-bottom: 1em;
+    transform: scale(2);
 }
 
 section#CreateAccount button {

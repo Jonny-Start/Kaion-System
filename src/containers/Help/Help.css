@@ -56,7 +56,8 @@ div#Help .accordion-content p {
 
 
 div#Help .accordion-item.active .accordion-content {
-    height: 60px;
+    /* height: 60px; */
+    height: fit-content;
     padding: 10px;
     /* Ajusta la altura máxima deseada */
     transition: 0.5s ease;

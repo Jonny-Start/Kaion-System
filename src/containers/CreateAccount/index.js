@@ -5,7 +5,7 @@ import imgIcono from "./../../icono.png";
 // import imgBackground2 from "./../../background2.jpg";
 import { Button, Input } from "../../components/forms";
 import { Link } from "react-router-dom";
-import { useAppContext } from '../../context/appContext'
+import { useAppContext } from "../../context/appContext";
 
 function CreateAccount() {
   const [fullName, setFullName] = React.useState("");
@@ -29,7 +29,6 @@ function CreateAccount() {
   const nameCompanyInput = React.useRef(null);
 
   const context = useAppContext();
-
 
   const useHandleCreateAccount = (e) => {
     e.preventDefault();
@@ -78,33 +77,23 @@ function CreateAccount() {
             <article>
               <h3>
                 <i className="fa-solid fa-check"></i>
-                Work with your data as code
+                Monitoreo integral del tiempo productivo
               </h3>
               <p>
-                Documents in MongoDB map directly to objects in your programming
-                language. Modify your schema as your apps grow over time.
+                Obtén una visión completa del tiempo dedicado a diferentes
+                actividades, proyectos y tareas, en diferentes entornos de
+                trabajo.
               </p>
             </article>
             <article>
               <h3>
                 <i className="fa-solid fa-check"></i>
-                Focus on building, not managing
+                Visualización intuitiva
               </h3>
               <p>
-                Let MongoDB Atlas take care of the infrastructure operations you
-                need for performance at scale, from always-on security to
-                point-in-time recovery.
-              </p>
-            </article>
-            <article>
-              <h3>
-                <i className="fa-solid fa-check"></i>
-                Simplify your data dependencies
-              </h3>
-              <p>
-                Leverage application data for full-text search, real-time
-                analytics, rich visualizations and more with a single API and
-                minimal data movement.
+                Utiliza gráficos claros y concisos para representar visualmente
+                la distribución del tiempo productivo, permitiendo una fácil
+                comprensión y toma de decisiones informadas.
               </p>
             </article>
           </div>

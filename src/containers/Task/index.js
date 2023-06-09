@@ -4,7 +4,7 @@ import { BasicLayout } from "../../components/BasicLayout";
 
 function Task() {
   return (
-    <BasicLayout idContent="Task">
+    <BasicLayout idContent="Task" backgroundImage={true}>
       <div className="recentOrders">
         <div className="cardHeader">
           <a className="btn">Crear nuevo</a>
