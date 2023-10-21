@@ -1,0 +1,156 @@
+/*
+**************************
+* Estilos de los inputs *
+**************************
+*/
+
+div.contentInput {
+    position: relative;
+    width: min-content;
+    /* height: min-content; */
+    /* height: 50px; */
+    /* margin: 5em; */
+}
+
+label {
+    color: var(--Azul-KS);
+
+    transition: top 100ms ease-in, left 100ms ease-in, font-size 100ms ease-in;
+    /* background-color: #060b23; */
+    cursor: text;
+    position: absolute;
+    font-size: 1em;
+    left: 6px;
+    top: 6px;
+}
+
+input {
+    background-color: var(--Blanco-KS);
+}
+
+label>i {
+    font-size: 0.9em;
+    margin-right: -2px;
+    color: var(--Azul-deg-KS);
+}
+
+input.inputText,
+input.inputPassword {
+    outline: none;
+    border: 1px var(--Azul-KS) solid;
+    border-radius: 3px;
+
+    padding-left: 3px;
+    /* font-size: 9px; */
+    color: var(--Negro-KS);
+
+    /* height: 17px; */
+
+    width: 15em;
+    font-size: 1em;
+    height: 2em;
+}
+
+input.error {
+    border-color: var(--Rojo-KS);
+    padding-right: 11PX;
+}
+
+input.error~label,
+input.error~label>i {
+    color: var(--Rojo-KS);
+}
+
+input.inputPassword~label~i.iconAccompaniesInput {
+    font-size: 1em;
+    color: var(--Azul-deg-KS);
+    position: absolute;
+    right: 7px;
+    top: 0.7em;
+}
+
+input.error~label~i.iconAccompaniesInput {
+    font-size: 1em;
+    color: var(--Rojo-KS);
+    position: absolute;
+    right: 7px;
+    top: 7px;
+}
+
+input.inputPassword {
+    padding-right: 19px;
+}
+
+label>span.inputRequired {
+    color: var(--Rojo-KS);
+}
+
+input.inputText:focus~label,
+input.inputPassword:focus~label,
+input.inputPassword.active~label,
+input.inputText.active~label {
+    top: -16px;
+    font-size: 0.8em;
+    left: 8px;
+    background-color: var(--Blanco-KS);
+}
+
+
+
+
+
+/*
+**************************
+* Estilos de los buttons *
+**************************
+*/
+
+button.buttonPrimary,
+button.secondary1,
+button.secondary2,
+button.secondary3 {
+    padding: 5px;
+    width: 100px;
+}
+
+button.buttonPrimary {
+    font-size: 1em;
+    background-color: var(--Azul-KS);
+    color: var(--Blanco-KS);
+    border-radius: 3px;
+    box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.53);
+
+    border: 0px;
+    width: 18em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+button.secondary1,
+button.secondary2,
+button.secondary3 {
+    font-size: 14px;
+    border-radius: 3px;
+    box-shadow: -1px 2px 5px rgba (0, 0, 0, 0.53);
+}
+
+button.secondary1 {
+    background-color: var(--Morado-KS);
+    color: var(--Blanco-KS);
+    border: 1px solid var(--Morado-KS);
+}
+
+button.secondary2 {
+    color: var(--Morado-KS);
+    border: 1px solid var(--Morado-KS);
+}
+
+button.secondary3 {
+    color: var(--Azul-KS);
+    border: 1px solid var(--Azul-KS);
+}
+
+button.secondary2,
+button.secondary3 {
+    background-color: var(--Blanco-KS);
+}

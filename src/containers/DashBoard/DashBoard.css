@@ -1,0 +1,107 @@
+div#DashBoard .cardBox {
+    position: relative;
+    width: calc(100% - 40px);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+div#DashBoard .cardBox .card {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+    box-shadow: 1px 1px 20px #55286f2e;
+    border-radius: 5px;
+}
+
+div#DashBoard .cardBox .card .numbers {
+    position: relative;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+div#DashBoard .cardBox .card .cardName {
+    color: #999;
+}
+
+div#DashBoard .cardBox .card .iconBox {
+    font-size: 2.5em;
+    color: var(--Morado-KS);
+}
+
+@media (max-width: 992px) {
+    div#DashBoard .cardBox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* @media (max-width: 480px) {
+    div#DashBoard .cardBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+} */
+
+
+
+/****************************************************************************/
+div#DashBoard section.contentCharts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1em;
+    padding: 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "chartPie chartPie verticalBar verticalBar"
+        "secondChartPie secondChartPie verticalBar verticalBar"
+        "BarChart BarChart lineChart lineChart";
+}
+
+.chartPie {
+    grid-area: chartPie;
+}
+
+.secondChartPie {
+    grid-area: secondChartPie;
+}
+
+.verticalBar {
+    grid-area: verticalBar;
+}
+
+.BarChart {
+    grid-area: BarChart;
+}
+
+.lineChart {
+    grid-area: lineChart;
+}
+
+div#DashBoard .cardChart {
+    background-color: var(--Blanco-KS);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 20px #55286f2e;
+}
+
+/* div#DashBoard .cardChart canvas {
+    height: 100% !important;
+} */
+
+@media (orientation: portrait) {
+    div#DashBoard section.contentCharts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #DashBoard>div>main>section>div.BarChart.cardChart>canvas {
+        width: 100%;
+    }
+}
+
+/* @media (max-width: 992px) {} */

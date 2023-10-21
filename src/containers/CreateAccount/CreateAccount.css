@@ -1,0 +1,290 @@
+section#CreateAccount * {
+    margin: 0;
+    padding: 0;
+}
+
+section#CreateAccount {
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    justify-items: center;
+}
+
+section#CreateAccount div#CreateAccountBackground {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../background2.jpg");
+    background-size: 64%;
+    background-position-x: left;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: relative;
+    background-size: cover;
+}
+
+section#CreateAccount div#CreateAccountGradient {
+    position: absolute;
+    text-align: right;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right bottom, rgb(31 72 126 / 69%) 49%, var(--Blanco-KS) 50%);
+}
+
+section#CreateAccount div#iconoKaionSystem {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--Azul-KS);
+}
+
+section#CreateAccount div#iconoKaionSystem>img {
+    width: 4rem;
+}
+
+section#CreateAccount div#iconoKaionSystem>p {
+    display: none;
+}
+
+section#CreateAccount .contentDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-left: 2em;
+    color: var(--Blanco-KS);
+    height: 92%;
+    align-items: flex-start;
+    margin-top: 1em;
+}
+
+section#CreateAccount .contentDescription h2 {
+    margin-top: 2em;
+    font-size: 2rem;
+}
+
+section#CreateAccount .contentDescription article {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    /* gap: 2em; */
+    justify-content: flex-start;
+    width: 57%;
+    min-height: 7em;
+}
+
+section#CreateAccount .contentDescription article i {
+    color: #02ff02;
+    font-size: 1.5em;
+    margin-right: 0.5em;
+}
+
+section#CreateAccount .contentDescription article p {
+    text-align: left;
+    color: var(--Blanco-KS);
+}
+
+
+/**
+** ----------------------------------------------------------------------------------------------------------- 
+**/
+section#CreateAccount div.cardForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 40em;
+    /* height: 50em; */
+    background-color: var(--Blanco-KS);
+    border-radius: 15px;
+    padding-bottom: 3em;
+    /* margin-right: -3em; */
+    /* box-shadow: 1px 1px 20px var(--Azul-KS); */
+}
+
+section#CreateAccount div.cardForm>p:nth-child(4) {
+    margin-top: 1em;
+}
+
+section#CreateAccount h1 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: 1.5rem;
+    color: var(--Azul-KS);
+}
+
+section#CreateAccount p {
+    color: var(--Azul-KS);
+    width: 80%;
+    text-align: center;
+
+}
+
+section#CreateAccount form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5em;
+    width: 55%;
+    margin-top: 2em;
+}
+
+section#CreateAccount .contentInput {
+    width: 100%;
+}
+
+section#CreateAccount .contentInput input,
+section#CreateAccount .contentInput select {
+    width: 100%;
+}
+
+section#CreateAccount .contentNumber {
+    display: flex;
+    gap: 5px;
+}
+
+section#CreateAccount .contentNumber .contentInput:first-child {
+    width: 20%;
+}
+
+section#CreateAccount .contentInput select {
+    outline: none;
+    border: 1px var(--Azul-KS) solid;
+    border-radius: 3px;
+    padding-left: 3px;
+    color: var(--Negro-KS);
+    width: 100%;
+    font-size: 1em;
+    height: 2em;
+}
+
+section#CreateAccount .contentTerms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+section#CreateAccount .contentTerms input[type=checkbox] {
+    margin-bottom: 1em;
+    transform: scale(2);
+}
+
+section#CreateAccount button {
+    width: 100%;
+    font-size: 1.3rem;
+    height: 2em;
+}
+
+section#CreateAccount span {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+section#CreateAccount button.signUpGoogle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    color: var(--Morado-KS);
+    border: 1px solid var(--Morado-KS);
+    border-radius: 3px;
+    background-color: var(--Blanco-KS);
+}
+
+section#CreateAccount button.signUpGoogle img {
+    max-height: 50%;
+}
+
+section#CreateAccount .singInLink {
+    margin-top: 2em;
+    font-weight: 600;
+}
+
+/**
+** ----------------------------------------------------------------------------------------------------------- 
+**/
+
+@media (orientation: landscape) {
+    @media (max-width: 1679px) {
+
+
+        /* Estilos CSS para orientación paisaje, (más ancho que largo) */
+        section#CreateAccount div#CreateAccountBackground {
+            height: 100%;
+        }
+
+        section#CreateAccount div#CreateAccountGradient {
+            /*width: 44em;*/
+        }
+
+        section#CreateAccount div.cardForm {
+            width: auto;
+            z-index: 3;
+        }
+    }
+}
+
+/* Estilos específicos para orientación retrato (más largo que ancho) */
+@media (orientation: portrait) {
+
+    /* Estilos CSS para orientación retrato */
+    section#CreateAccount {
+        grid-template-columns: none;
+    }
+
+    section#CreateAccount div#CreateAccountBackground {
+        height: 22vh;
+        background-size: 99%;
+    }
+
+    section#CreateAccount div#CreateAccountGradient {
+        height: 101%;
+    }
+
+    section#CreateAccount div#iconoKaionSystem {
+        top: 32px;
+        left: 20px;
+        flex-direction: row-reverse;
+        width: 92%;
+        align-items: flex-start;
+    }
+
+    section#CreateAccount div#iconoKaionSystem>p {
+        display: block;
+        color: var(--Blanco-KS);
+        font-size: 0.9em;
+        text-align: left;
+        margin-top: -0.5em;
+    }
+
+    section#CreateAccount .contentDescription {
+        display: none;
+    }
+
+    section#CreateAccount div.cardForm {
+        width: auto;
+        /* height: 50em; */
+        background-color: transparent;
+        margin-right: 0;
+        box-shadow: none;
+        margin-top: -5em;
+        z-index: 3;
+    }
+
+    section#CreateAccount form {
+        width: 72%;
+    }
+}

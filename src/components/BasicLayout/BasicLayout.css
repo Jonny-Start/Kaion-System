@@ -1,0 +1,103 @@
+.container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    position: relative;
+    width: 100%;
+}
+
+/* ------------------------------- */
+.main {
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background: var(--Blanco-KS);
+}
+
+.main.backgroundImg {
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-blend-mode: color-burn;
+    background-attachment: fixed;
+
+    animation-name: moveBackground;
+    animation-duration: 140s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.99, 0.99, 0.01, -0.01);
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: center;
+    }
+
+    10% {
+        background-position: bottom;
+    }
+
+    20% {
+        background-position: left;
+    }
+
+    30% {
+        background-position: bottom;
+    }
+
+    40% {
+        background-position: right;
+    }
+
+    50% {
+        background-position: top;
+    }
+
+    60% {
+        background-position: inherit;
+    }
+
+    70% {
+        background-position: right;
+    }
+
+    80% {
+        background-position: left;
+    }
+
+    90% {
+        background-position: bottom;
+    }
+
+    100% {
+        background-position: center;
+    }
+}
+
+
+.main.active {
+    width: calc(100% - 60px);
+    left: 60px;
+}
+
+@media (max-width: 992px) {
+    .main {
+        width: 100%;
+        left: 0;
+    }
+
+    .main.active {
+        width: calc(100% - 300px);
+        left: 300px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .main,
+    .main.active {
+        width: 100%;
+        left: 0;
+    }
+}

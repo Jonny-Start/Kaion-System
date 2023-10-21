@@ -1,0 +1,182 @@
+section#login {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section#login #contentFormLogin {
+    margin-top: 8em;
+    width: 100%;
+    text-align: center;
+}
+
+section#login h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--Azul-KS);
+}
+
+section#login img#iconoKaionSystem {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 5em;
+}
+
+section#login input.inputText:not(.error) {
+    width: 16em;
+}
+
+section#login div.imgBackground {
+    /* width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #333;
+    background-image: url("../../icono.png");
+    background-size: cover;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+
+    /* width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 50px solid #333; */
+    /* background-size: 100% 100%;
+    transform: rotate(270deg); */
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../background.jpg");
+    background-size: 79% auto;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: relative;
+
+
+
+}
+
+section#login div.imgBackground>div.colorGradient {
+    position: absolute;
+    text-align: right;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to left bottom, rgb(31 72 126 / 69%) 49%, var(--Blanco-KS) 50%);
+}
+
+section#login div.imgBackground>div.colorGradient h2,
+section#login div.imgBackground>div.colorGradient p {
+    color: white;
+}
+
+section#login div.imgBackground>div.colorGradient h2 {
+    width: 80%;
+    font-size: 2.5em;
+    font-weight: 400;
+    text-align: center;
+    padding-left: 20%;
+}
+
+section#login div.imgBackground>div.colorGradient h2>span {
+    margin-left: 70px;
+    font-weight: bold;
+}
+
+section#login div.imgBackground>div.colorGradient p {
+    width: 50%;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    padding-left: 50%;
+    margin-top: 5em;
+    white-space: break-spaces;
+}
+
+section#login form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 620px) {}
+
+@media (orientation: landscape) {
+
+    /* Estilos CSS para orientación paisaje, (más ancho que largo) */
+    section#login #contentFormLogin {
+
+        margin-top: 4em;
+    }
+
+    section#login div.imgBackground>div.colorGradient h2 {
+        margin-top: 0.5em;
+    }
+
+    section#login div.imgBackground>div.colorGradient p {
+        margin-top: -0.5em;
+
+    }
+}
+
+/* Estilos específicos para orientación retrato (más largo que ancho) */
+@media (orientation: portrait) {
+
+    /* Estilos CSS para orientación retrato */
+    section#login {
+        /* grid-template-rows: 1fr 1fr; */
+        grid-template-columns: none;
+    }
+
+    section#login #contentFormLogin {
+        margin-top: -2em;
+        grid-row: 2;
+        z-index: 3;
+    }
+
+    section#login img#iconoKaionSystem {
+        top: 53px;
+        z-index: 1;
+    }
+
+    section#login h1 {
+        margin-bottom: 2em;
+        margin-top: 0;
+    }
+
+    section#login form {
+        gap: 40px;
+    }
+
+    section#login div.imgBackground {
+        height: 22vh;
+        background-size: 95% auto;
+        grid-row: 1;
+    }
+
+    section#login div.imgBackground>div.colorGradient {
+        background-image: linear-gradient(to left bottom, rgb(31 72 126 / 69%) 49%, var(--Blanco-KS) 40%);
+
+    }
+
+    section#login div.imgBackground>div.colorGradient h2 {
+        width: 71%;
+        padding-left: 29%;
+        margin-top: 0.3em;
+        font-size: 1.7em;
+    }
+
+    section#login div.imgBackground>div.colorGradient h2>span {
+        margin-left: 81px;
+    }
+
+    section#login div.imgBackground>div.colorGradient p {
+        display: none;
+    }
+}

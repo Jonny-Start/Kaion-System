@@ -1,0 +1,144 @@
+div#Task .recentOrders {
+    position: relative;
+    min-height: 530px;
+    /* background: #fff; */
+    padding: 20px;
+}
+
+div#Task .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+div#Task .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+div#Task .cardHeader h2 {
+    font-weight: 600;
+}
+
+div#Task .btn {
+    position: relative;
+    padding: 5px 10px;
+    background: var(--Azul-KS);
+    color: var(--Blanco-KS);
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+div#Task .cardTable {
+    margin-top: 10px;
+
+    background-color: var(--Blanco-KS);
+    box-shadow: 1px 1px 20px #55286f2e;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+div#Task table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+div#Task table thead td {
+    font-weight: 600;
+}
+
+div#Task table thead h3 {
+    margin-top: 0;
+    color: var(--Morado-KS);
+}
+
+div#Task table input {
+    font-size: 1em;
+    border-radius: 5px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #0000004f;
+    width: 50%;
+    height: 2em;
+    outline: none;
+}
+div#Task table input:active{
+    border: none;
+}
+
+div#Task .recentOrders table tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+div#Task .recentOrders table tr:last-child {
+    border-bottom: none;
+}
+
+div#Task .recentOrders table tbody tr:hover {
+    background: var(--Azul-KS);
+    color: var(--Blanco-KS);
+}
+
+div#Task .recentOrders table tr td {
+    padding: 9px 5px;
+}
+
+div#Task .recentOrders table thead tr td:last-child,
+div#Task .recentOrders table tbody tr td:last-child {
+    text-align: right;
+}
+
+div#Task .recentOrders table thead tr td:nth-child(2),
+div#Task .recentOrders table tbody tr td:nth-child(2) {
+    text-align: center;
+}
+
+div#Task .recentOrders table thead tr td:nth-child(3),
+div#Task .recentOrders table tbody tr td:nth-child(3) {
+    text-align: right;
+    padding-right: 20px;
+}
+
+
+div#Task .status {
+    position: relative;
+    padding: 2px 4px;
+    color: var(--Blanco-KS);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+div#Task .billableTrue {
+    background: #8de02c;
+}
+
+/* div#Task .pending {
+    background: #f9ca3f;
+} */
+
+div#Task .billableFalse {
+    background: #f00;
+}
+
+/* div#Task .inprogress {
+    background: #1795ce;
+} */
+
+@media (max-width: 480px) {
+    div#Task .cardBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    div#Task .recentOrders {
+        overflow-x: auto;
+    }
+
+    /* div#Task .recentOrders table {
+        width: 600px;
+    } */
+}

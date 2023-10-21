@@ -1,0 +1,52 @@
+div#ConnectApi div.contentConnectApi h2 {
+    text-align: center;
+    color: var(--Azul-KS);
+    font-size: 2.5em;
+}
+
+div#ConnectApi div.contentConnectApi h2~p {
+    text-align: center;
+    color: var(--Azul-KS);
+}
+
+div#ConnectApi div.contentConnectApi h3 {
+    text-align: center;
+    color: var(--Azul-KS);
+}
+
+div#ConnectApi div.contentConnectApi h3 span {
+    color: var(--Morado-KS);
+}
+
+div#ConnectApi div.contentConnectApi h3 span i {
+    opacity: 0.5;
+    color: var(--Gris-KS);
+    cursor: pointer;
+}
+
+div#ConnectApi div.contentConnectApi h3 p {
+    width: calc(100% - 8em);
+    height: 4em;
+    word-break: break-word;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+
+
+div#ConnectApi div.contentConnectApi ul {
+    list-style: circle;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+
+div#ConnectApi div.contentConnectApi ul li {
+    font-weight: bold;
+    color: var(--Morado-KS);
+}
+
+div#ConnectApi div.contentConnectApi ul li p {
+    font-weight: 300;
+    opacity: 0.5;
+    color: var(--Gris-KS);
+}

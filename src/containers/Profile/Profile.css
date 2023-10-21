@@ -1,0 +1,63 @@
+div#Profile .contentProfile {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 2em;
+}
+
+div#Profile .contentProfile div {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+div#Profile .contentProfile div .widthMax {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+div#Profile .contentProfile div.coif .contentInput:nth-child(2) {
+    max-width: 20em;
+    min-width: 10em;
+}
+
+div#Profile .contentProfile div.cois .contentInput:first-child {
+    max-width: 7em;
+    min-width: 5em;
+}
+
+div#Profile .contentProfile div.contentButtons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* *********************************************************** */
+
+div#Profile section.contentChangePassword {
+    margin-top: 10px;
+    background-color: var(--Blanco-KS);
+    box-shadow: 1px 1px 20px #55286f2e;
+    border-radius: 5px;
+    padding: 1em;
+
+    width: 100%;
+    text-align: center;
+}
+
+div#Profile section.contentChangePassword h2 {
+    text-align: center;
+    color: var(--Azul-KS);
+}
+
+div#Profile section.contentChangePassword .contentInput {
+    margin-bottom: 2em;
+}
